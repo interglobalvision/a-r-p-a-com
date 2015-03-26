@@ -774,7 +774,6 @@ img {
   top: 0;
   left: 0;
   position: fixed;
-  background-color: #fdfdfd;
   z-index: 999;
 }
 #splash-arpa,
@@ -797,6 +796,7 @@ img {
   font-size: 0;
 }
 #splash-arpa {
+  background-color: #fdfdfd;
   left: 0;
 }
 #splash-arpa .splash-text {
@@ -804,7 +804,6 @@ img {
 }
 #splash-noon {
   left: 50%;
-  background-color: #00f;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
