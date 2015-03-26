@@ -33,9 +33,20 @@
 <body <?php body_class(); ?>>
 <!--[if lt IE 7]><p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p><![endif]-->
 
-  <section id="main-container">
+  <nav id="nav-top-left" class="nav">
+    Address
+  </nav>
 
-  <!-- start content -->
-  <header id="header">
-    <h1><a href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a></h1>
-  </header>
+  <nav id="nav-top-right" class="nav">
+    Email
+  </nav>
+
+  <nav id="nav-bottom-left" class="nav">
+    &larr;
+  </nav>
+
+  <nav id="nav-bottom-right" class="nav">
+    <a href="<?php echo home_url('news/'); ?>">News</a>
+  </nav>
+
+  <section id="main-container">

@@ -2,49 +2,49 @@
 // Menu icons for Custom Post Types
 function add_menu_icons_styles(){
 ?>
- 
+
 <style>
 #adminmenu .menu-icon-project div.wp-menu-image:before {
     content: '\f498';
 }
 </style>
- 
+
 <?php
 }
 add_action( 'admin_head', 'add_menu_icons_styles' );
 
 
 //Register Custom Post Types
-add_action( 'init', 'register_cpt_project' );
+add_action( 'init', 'register_cpt_projects' );
 
-function register_cpt_project() {
+function register_cpt_projects() {
 
-    $labels = array( 
-        'name' => _x( 'Projects', 'project' ),
-        'singular_name' => _x( 'Project', 'project' ),
-        'add_new' => _x( 'Add New', 'project' ),
-        'add_new_item' => _x( 'Add New Project', 'project' ),
-        'edit_item' => _x( 'Edit Project', 'project' ),
-        'new_item' => _x( 'New Project', 'project' ),
-        'view_item' => _x( 'View Project', 'project' ),
-        'search_items' => _x( 'Search Projects', 'project' ),
-        'not_found' => _x( 'No projects found', 'project' ),
-        'not_found_in_trash' => _x( 'No projects found in Trash', 'project' ),
-        'parent_item_colon' => _x( 'Parent Project:', 'project' ),
-        'menu_name' => _x( 'Projects', 'project' ),
+    $labels = array(
+        'name' => _x( 'Projects', 'projects' ),
+        'singular_name' => _x( 'Project', 'projects' ),
+        'add_new' => _x( 'Add New', 'projects' ),
+        'add_new_item' => _x( 'Add New Project', 'projects' ),
+        'edit_item' => _x( 'Edit Project', 'projects' ),
+        'new_item' => _x( 'New Project', 'projects' ),
+        'view_item' => _x( 'View Project', 'projects' ),
+        'search_items' => _x( 'Search Projects', 'projects' ),
+        'not_found' => _x( 'No projects found', 'projects' ),
+        'not_found_in_trash' => _x( 'No projects found in Trash', 'projects' ),
+        'parent_item_colon' => _x( 'Parent Project:', 'projects' ),
+        'menu_name' => _x( 'Projects', 'projects' ),
     );
 
-    $args = array( 
+    $args = array(
         'labels' => $labels,
         'hierarchical' => false,
-        
+
         'supports' => array( 'title', 'editor', 'thumbnail' ),
-        
+        'taxonomies' => array( 'category' ),
         'public' => true,
         'show_ui' => true,
         'show_in_menu' => true,
         'menu_position' => 5,
-        
+
         'show_in_nav_menus' => true,
         'publicly_queryable' => true,
         'exclude_from_search' => false,
@@ -55,5 +55,5 @@ function register_cpt_project() {
         'capability_type' => 'post'
     );
 
-    register_post_type( 'project', $args );
+    register_post_type( 'projects', $args );
 }
