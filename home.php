@@ -6,11 +6,13 @@ get_header();
 
 <section id="splash">
   <div id="splash-arpa">
-    ARPA
+    <div class="splash-text">ARPA</div>
   </div>
-  <div id="splash-noon">
-    NOON
-  </div>
+  <a href="#">
+    <div id="splash-noon">
+      <div class="splash-text">NOON</div>
+    </div>
+  </a>
 </section>
 
 <main id="main-content">

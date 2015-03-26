@@ -33,6 +33,9 @@ $font-tracking-basic = 0.001em
 $color-black-soft = rgb(14,14,14)
 $color-white-soft = rgb(253,253,253)
 
+$color-blue = rgb(0,0,255)
+
+
 // TYPOGRAPHY
 
 body
@@ -66,8 +69,8 @@ a,a:active,a:visited
 // BASIC
 
 html
-  background-color: $color-white-soft
-  color: $color-black-soft
+  background-color: $color-blue
+  color: $color-white-soft
 
 img
   max-width: 100%
@@ -75,6 +78,49 @@ img
 
 
 //the 100% widths are just so stylus can compile delete as desired
+
+// SPLASH
+
+#splash 
+  width: 100%
+  height: 100%
+  top: 0
+  left: 0
+  position: fixed
+  background-color: $color-white-soft
+  z-index: 999
+  
+#splash-arpa, #splash-noon
+  width: 50%
+  height: 100%
+  top: 0
+  position: absolute
+  cursor: pointer 
+
+.splash-text
+  width: 100%
+  height: 100%
+  position: absolute
+  top: 0
+  left: 0
+  background-size: 100%
+  background-position: center
+  background-repeat: no-repeat
+  font-size: 0
+
+#splash-arpa
+  left: 0
+  .splash-text
+    background-image: url('../img/svg/arpa_blue.svg')
+  
+#splash-noon
+  left: 50%
+  background-color: $color-blue
+  background-size: cover
+  background-position: center
+  background-repeat: no-repeat
+  .splash-text
+    background-image: url('../img/svg/noon_white.svg')
 
 // HEADER
 

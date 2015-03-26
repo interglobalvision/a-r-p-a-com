@@ -9,4 +9,9 @@ function l(data) {
 jQuery(document).ready(function () {
   'use strict';
   console.log('Hola Globie');
+
+  $('#splash-arpa').on('click', function() {
+  	$('#splash').remove();
+  }); 
+
 });
