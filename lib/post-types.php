@@ -57,3 +57,46 @@ function register_cpt_projects() {
 
     register_post_type( 'projects', $args );
 }
+
+add_action( 'init', 'register_cpt_clients' );
+
+function register_cpt_clients() {
+
+    $labels = array(
+        'name' => _x( 'Clients', 'clients' ),
+        'singular_name' => _x( 'Client', 'clients' ),
+        'add_new' => _x( 'Add New', 'clients' ),
+        'add_new_item' => _x( 'Add New Client', 'clients' ),
+        'edit_item' => _x( 'Edit Client', 'clients' ),
+        'new_item' => _x( 'New Client', 'clients' ),
+        'view_item' => _x( 'View Client', 'clients' ),
+        'search_items' => _x( 'Search Clients', 'clients' ),
+        'not_found' => _x( 'No clients found', 'clients' ),
+        'not_found_in_trash' => _x( 'No clients found in Trash', 'clients' ),
+        'parent_item_colon' => _x( 'Parent Client:', 'clients' ),
+        'menu_name' => _x( 'Clients', 'clients' ),
+    );
+
+    $args = array(
+        'labels' => $labels,
+        'hierarchical' => false,
+
+        'supports' => array( 'title', 'editor', 'thumbnail' ),
+        'taxonomies' => array( 'category' ),
+        'public' => true,
+        'show_ui' => true,
+        'show_in_menu' => true,
+        'menu_position' => 5,
+
+        'show_in_nav_menus' => true,
+        'publicly_queryable' => true,
+        'exclude_from_search' => false,
+        'has_archive' => true,
+        'query_var' => true,
+        'can_export' => true,
+        'rewrite' => true,
+        'capability_type' => 'post'
+    );
+
+    register_post_type( 'clients', $args );
+}
