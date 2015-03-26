@@ -41,7 +41,7 @@ if ( $query->have_posts() ) {
   echo '<ul>';
   while ( $query->have_posts() ) {
     $query->the_post();
-    echo '<li data-client="'.get_the_id().'">'.get_the_title().'</li>';
+    echo '<li><a href="#'.$post->post_name.'">'.get_the_title().'</a></li>';
   }
   echo '</ul>';
 } else {
