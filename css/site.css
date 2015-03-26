@@ -825,6 +825,30 @@ img {
 #header {
   width: 100%;
 }
+.nav {
+  position: fixed;
+  text-transform: uppercase;
+  font-size: 0.9em;
+}
+.nav a {
+  text-decoration: none;
+}
+#nav-top-left {
+  top: 2%;
+  left: 2%;
+}
+#nav-top-right {
+  top: 2%;
+  right: 2%;
+}
+#nav-bottom-right {
+  bottom: 2%;
+  right: 2%;
+}
+#nav-bottom-left {
+  bottom: 2%;
+  left: 2%;
+}
 #home p,
 #home li {
   font-size: 2em;
@@ -840,9 +864,6 @@ img {
   -webkit-column-gap: 32px;
      -moz-column-gap: 32px;
           column-gap: 32px;
-}
-#home li {
-  cursor: pointer;
 }
 #posts {
   width: 100%;
