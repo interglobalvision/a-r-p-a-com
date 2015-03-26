@@ -762,13 +762,6 @@ a,
 a:active,
 a:visited {
   color: inherit;
-  -webkit-transition: opacity 0.2s;
-          transition: opacity 0.2s;
-}
-a:hover,
-a:active:hover,
-a:visited:hover {
-  opacity: 0.5;
 }
 html {
   background-color: #00f;
