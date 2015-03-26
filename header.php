@@ -33,12 +33,18 @@
 <body <?php body_class(); ?>>
 <!--[if lt IE 7]><p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p><![endif]-->
 
+<?php
+  $home_id = get_option('page_on_front');
+  $info_meta = get_post_meta($home_id, false);
+  $address = $info_meta['_igv_address'][0];
+  $email = $info_meta['_igv_email'][0];
+?>
   <nav id="nav-top-left" class="nav">
-    Address
+    <?php if($address) { echo $address; } ?>
   </nav>
 
   <nav id="nav-top-right" class="nav">
-    Email
+    <?php if($email) { echo '<a href="mailto:'.$email.'" target="_blank">'.$email.'</a>'; } ?>
   </nav>
 
   <nav id="nav-bottom-left" class="nav">
