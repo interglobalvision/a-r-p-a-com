@@ -683,52 +683,40 @@ ul.u-inline-list li {
 }
 .container {
   margin: 0 auto;
-  width: 1032px;
+  width: 1044px;
 }
 .row {
   clear: both;
 }
 .col {
   float: left;
-  margin-left: 16px;
-  margin-right: 16px;
+  margin-left: 42px;
+  margin-right: 42px;
   box-sizing: content-box;
 }
 .col1 {
-  width: 54px;
+  width: 90px;
 }
 .col2 {
-  width: 140px;
+  width: 264px;
 }
 .col3 {
-  width: 226px;
+  width: 438px;
 }
 .col4 {
-  width: 312px;
+  width: 612px;
 }
 .col5 {
-  width: 398px;
+  width: 786px;
 }
 .col6 {
-  width: 484px;
+  width: 960px;
 }
-.col7 {
-  width: 570px;
+.grid-sizer {
+  width: 174px;
 }
-.col8 {
-  width: 656px;
-}
-.col9 {
-  width: 742px;
-}
-.col10 {
-  width: 828px;
-}
-.col11 {
-  width: 914px;
-}
-.col12 {
-  width: 1000px;
+.gutter-sizer {
+  width: 84px;
 }
 body {
   font-family: helvetica, arial, sans-serif;
@@ -744,7 +732,7 @@ h2 {
   font-weight: normal;
   display: block;
   text-align: center;
-  margin: 64px 0;
+  margin: 84px 0;
 }
 h2 span {
   border-bottom: 1px solid #fdfdfd;
@@ -762,6 +750,9 @@ a,
 a:active,
 a:visited {
   color: inherit;
+  text-decoration: none;
+  padding-bottom: 1px;
+  border-bottom: 1px solid #fdfdfd;
 }
 html {
   background-color: #00f;
@@ -815,16 +806,15 @@ img {
 #splash-noon .splash-text {
   background-image: url("../img/svg/noon_white.svg");
 }
-#header {
-  width: 100%;
-}
 .nav {
   position: fixed;
   text-transform: uppercase;
   font-size: 0.9em;
+  z-index: 999;
 }
 .nav a {
-  text-decoration: none;
+  border: 0;
+  padding: 1px;
 }
 #nav-top-left {
   top: 2%;
@@ -842,6 +832,9 @@ img {
   bottom: 2%;
   left: 2%;
 }
+#main-container {
+  padding: 84px 0;
+}
 #home p,
 #home li {
   font-size: 2em;
@@ -850,13 +843,13 @@ img {
 }
 #home ul {
   -webkit-column-count: 2;
-  -webkit-column-gap: 32px;
+  -webkit-column-gap: 84px;
   -webkit-column-count: 2;
      -moz-column-count: 2;
           column-count: 2;
-  -webkit-column-gap: 32px;
-     -moz-column-gap: 32px;
-          column-gap: 32px;
+  -webkit-column-gap: 84px;
+     -moz-column-gap: 84px;
+          column-gap: 84px;
 }
 #posts {
   width: 100%;
@@ -867,10 +860,32 @@ img {
 #pagination {
   width: 100%;
 }
+#news {
+  visibility: hidden;
+}
+.tweet {
+  text-align: center;
+  margin-bottom: 3em;
+}
+.tweet-meta {
+  margin-bottom: 0.7em;
+  font-size: 0.8em;
+}
+.tweet-meta a {
+  border-bottom: 0;
+  padding: 0;
+}
+.tweet-img {
+  margin-top: 1em;
+}
+#follow-us {
+  text-align: center;
+  font-size: 2em;
+}
 #footer {
   width: 100%;
 }
-@media screen and (max-width: 1032px) {
+@media screen and (max-width: 1044px) {
   html {
     width: 100%;
   }

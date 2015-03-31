@@ -1,9 +1,9 @@
 @import "sanitize"
 @import "helpers"
 
-$cols = 12
-$col = 54px
-$gutter = 32px
+$cols = 6
+$col = 90px
+$gutter = 84px
 .container
   margin: 0 auto
   width: ($col * $cols)+($gutter * $cols)
@@ -17,6 +17,12 @@ $gutter = 32px
 for col in 1..$cols
   .col{col}
     width: ( col * $col ) + ( ( col - 1 ) * $gutter )
+    
+.grid-sizer
+  width: $col + $gutter
+
+.gutter-sizer
+  width: $gutter
 
 // VARIABLES
 
@@ -50,7 +56,7 @@ h2
   font-weight: normal
   display: block
   text-align: center
-  margin: $margin-basic 0
+  margin: $margin-small 0
   span
     border-bottom: 1px solid $color-white-soft
 
@@ -68,6 +74,9 @@ li
 
 a,a:active,a:visited
   color:inherit
+  text-decoration: none
+  padding-bottom: 1px
+  border-bottom: 1px solid $color-white-soft 
 
 
 // BASIC
@@ -128,15 +137,14 @@ img
 
 // HEADER
 
-#header
-  width: 100%
-  
 .nav
   position: fixed
   text-transform: uppercase
   font-size: .9em
+  z-index: 999
   a
-    text-decoration: none
+    border: 0
+    padding: 1px
   
 #nav-top-left
   top: 2%
@@ -155,6 +163,10 @@ img
   left: 2%
   
 // HOME
+
+#main-container 
+  padding: $margin-small 0
+
 
 #home 
   p, li
@@ -176,6 +188,28 @@ img
 
 #pagination
   width: 100%
+  
+// NEWS 
+#news 
+  visibility: hidden
+ 
+.tweet
+  text-align: center
+  margin-bottom: 3em
+  
+.tweet-meta
+  margin-bottom: .7em
+  font-size: .8em
+  a
+    border-bottom: 0
+    padding: 0
+  
+.tweet-img
+  margin-top: 1em
+  
+#follow-us
+  text-align: center
+  font-size: 2em
 
 
 // FOOTER

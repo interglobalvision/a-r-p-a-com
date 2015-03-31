@@ -3,15 +3,24 @@
 
 function l(data) {
   'use strict';
-  console.log(l);
+  console.log(data);
 }
 
 jQuery(document).ready(function () {
   'use strict';
-  console.log('Hola Globie');
 
   $('#splash-arpa').on('click', function() {
   	$('#splash').remove();
+  }); 
+
+  var $masonry = $('.js-masonry');
+  $masonry.imagesLoaded( function() {
+	  $masonry.masonry({
+	    columnWidth: '.grid-sizer',
+	    gutterWidth: '.gutter-sizer',
+	    itemSelector: '.item'
+	  });
+	  $('#news').css('visibility','visible'); 
   }); 
 
 });

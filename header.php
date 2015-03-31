@@ -47,7 +47,7 @@
     <?php if($email) { echo '<a href="mailto:'.$email.'" target="_blank">'.$email.'</a>'; } ?>
   </nav>
 
-  <nav id="nav-bottom-left" class="nav">
+  <nav id="nav-bottom-left" class="nav u-hidden">
     &larr;
   </nav>
 

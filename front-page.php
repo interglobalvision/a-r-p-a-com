@@ -56,6 +56,10 @@ wp_reset_postdata();
     </div>
   </section>
 
+  <section id="result">
+    
+  </section>
+
 <!-- end main-content -->
 
 </main>
