@@ -37,8 +37,8 @@ if ($content) {
 
       echo '<div class="tweet-meta"><a target="_blank" href="https://twitter.com/__ARPA__/status/' . $tweet->id_str . '">';
         $time = strtotime($tweet->created_at);
-        echo '<span class="date">' . date('d-m-y' , $time) . '</span>';
-        echo '<span class="time"> - ' . date('h:ia' , $time) . '</span>';
+        echo '<span class="date">' . date('j l Y' , $time) . '</span>';
+        echo '<span class="time"> - ' . date('g:i' , $time) . '</span>';
       //if (!empty($tweet->place)) {echo '<span class="location"> - from ' . $tweet->place->full_name . '</span>';};
         echo '</a></div>';
 
