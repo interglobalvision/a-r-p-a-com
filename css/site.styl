@@ -161,11 +161,21 @@ img
 #nav-bottom-left
   bottom: 2%
   left: 2%
+
+.back 
+  display: none
+  
+body.page
+  .back 
+    display: block
   
 // HOME
 
 #main-container 
-  padding: $margin-small 0
+  section
+    margin: 0 0 $margin-basic
+  
+
 
 
 #home 
@@ -190,9 +200,6 @@ img
   width: 100%
   
 // NEWS 
-#news 
-  visibility: hidden
- 
 .tweet
   text-align: center
   margin-bottom: 3em

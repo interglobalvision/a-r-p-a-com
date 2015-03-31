@@ -832,8 +832,14 @@ img {
   bottom: 2%;
   left: 2%;
 }
-#main-container {
-  padding: 84px 0;
+.back {
+  display: none;
+}
+body.page .back {
+  display: block;
+}
+#main-container section {
+  margin: 0 0 168px;
 }
 #home p,
 #home li {
@@ -859,9 +865,6 @@ img {
 }
 #pagination {
   width: 100%;
-}
-#news {
-  visibility: hidden;
 }
 .tweet {
   text-align: center;

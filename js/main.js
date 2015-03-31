@@ -20,7 +20,6 @@ jQuery(document).ready(function () {
 	    gutterWidth: '.gutter-sizer',
 	    itemSelector: '.item'
 	  });
-	  $('#news').css('visibility','visible'); 
   }); 
 
 });
