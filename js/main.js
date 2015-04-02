@@ -11,7 +11,7 @@ jQuery(document).ready(function () {
 
   $('#splash-arpa').on('click', function() {
   	$('#splash').remove();
-  }); 
+  });
 
   var $masonry = $('.js-masonry');
   $masonry.imagesLoaded( function() {
@@ -20,6 +20,6 @@ jQuery(document).ready(function () {
 	    gutterWidth: '.gutter-sizer',
 	    itemSelector: '.item'
 	  });
-  }); 
+  });
 
 });
