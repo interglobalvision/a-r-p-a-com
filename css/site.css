@@ -742,7 +742,7 @@ h1 {
   font-size: 3em;
 }
 h2 {
-  font-size: 1.2em;
+  font-size: 1em;
   font-weight: normal;
   display: block;
   text-align: center;
@@ -774,6 +774,9 @@ html {
 img {
   max-width: 100%;
   height: auto;
+}
+#main-container {
+  padding: 3em 0;
 }
 #main-container section {
   margin: 0 0 168px;
