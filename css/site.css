@@ -857,6 +857,10 @@ img {
 }
 .back-arrow {
   font-size: 2em;
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  display: block;
 }
 #home-container {
   height: 100%;
