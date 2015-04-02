@@ -47,7 +47,8 @@ if ( $clients ) {
         <ul id="clients">
 <?php
 foreach ($clients as $post) {
-  echo '<li><a href="#!/'.$post->post_name.'">'.get_the_title().'</a></li>';
+  $name = get_the_title();
+  echo '<li><a href="#!/'.$post->post_name.'">'.$name.'</a></li>';
 }
 ?>
         </ul>
@@ -97,7 +98,6 @@ if ($content) {
       $time = strtotime($tweet->created_at);
       echo '<span class="date">' . date('j l Y' , $time) . '</span>';
       echo '<span class="time"> - ' . date('g:i' , $time) . '</span>';
-      //if (!empty($tweet->place)) {echo '<span class="location"> - from ' . $tweet->place->full_name . '</span>';};
       echo '</a></div>';
 
       $filtered = preg_replace('#\bhttps?://[^\s()<>]+(?:\([\w\d]+\)|([^[:punct:]\s]|/))#', '', $tweet->text);
@@ -111,7 +111,7 @@ if ($content) {
 
       if (!empty($tweet->entities->media)) {
         foreach ($tweet->entities->media as $media) {
-          echo '<a target="_blank" href="https://twitter.com/__ARPA__/status/' . $tweet->id_str . '"><img src="' . $media->media_url_https . '" class="tweet-img" alt="twitter image"></a>';
+          echo '<a target="_blank" href="https://twitter.com/__ARPA__/status/' . $tweet->id_str . '" ><img src="' . $media->media_url_https . '" class="tweet-img" alt="twitter image"></a>';
         }
       }
 

@@ -38,6 +38,8 @@ function router( hash ) {
       $news.ScrollTo();
       $backArrow.removeClass('u-hidden');
       $newsLink.addClass('u-hidden');
+      $('meta[property="og:title"]').attr('content','ARPA - News');
+      $('title').html('ARPA - News');
 
     } else if ( hash === 'home' ) {
 
@@ -45,6 +47,9 @@ function router( hash ) {
       $home.ScrollTo();
       $backArrow.addClass('u-hidden');
       $newsLink.removeClass('u-hidden');
+      $('meta[property="og:title"]').attr('content','ARPA');
+      $('title').html('ARPA');
+
       timeout = setTimeout(function() {
         $mainContent.hide();
         $news.hide();

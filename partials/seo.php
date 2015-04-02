@@ -31,14 +31,14 @@ if( is_home() ) {
 } elseif( is_single() ) {
 ?>
   <meta property="og:url" content="<?php the_permalink() ?>"/>
-  <meta property="og:title" content="<?php single_post_title(''); ?>" />
+  <meta property="og:title" content="<?php bloginfo('name'); ?>" />
   <meta property="og:description" content="<?php echo $excerpt ?>" />
   <meta property="og:type" content="article" />
   <meta property="og:site_name" content="<?php bloginfo('name'); ?>" />
 <?php
 } else {
 ?>
-  <meta property="og:title" content="<?php single_post_title(''); ?>" />
+  <meta property="og:title" content="<?php bloginfo('name'); ?>" />
   <meta property="og:site_name" content="<?php bloginfo('name'); ?>" />
   <meta property="og:description" content="<?php bloginfo('description'); ?>" />
   <meta property="og:type" content="website" />
