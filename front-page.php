@@ -44,7 +44,7 @@ $clients = get_posts( $args );
 if ( $clients ) {
 ?>
       <h2><span>Clients</span></h2>
-        <ul>
+        <ul id="clients">
 <?php
 foreach ($clients as $post) {
   echo '<li><a href="#!/'.$post->post_name.'">'.get_the_title().'</a></li>';

@@ -956,6 +956,9 @@ img {
     margin-top: 280px;
   }
   #clients {
+    -webkit-column-gap: 56px;
+       -moz-column-gap: 56px;
+            column-gap: 56px;
     margin-bottom: 28px;
   }
   #news {
@@ -1005,6 +1008,9 @@ img {
     margin-top: 200px;
   }
   #clients {
+    -webkit-column-gap: 40px;
+       -moz-column-gap: 40px;
+            column-gap: 40px;
     margin-bottom: 20px;
   }
   #news {
@@ -1054,6 +1060,9 @@ img {
     margin-top: 125px;
   }
   #clients {
+    -webkit-column-gap: 25px;
+       -moz-column-gap: 25px;
+            column-gap: 25px;
     margin-bottom: 12.5px;
   }
   #news {
