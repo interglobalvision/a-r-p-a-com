@@ -15,6 +15,8 @@ var scrollAnimationDuration = 400;
 // CACHED
 
 var $masonry = $('.js-masonry'),
+  $window = $('.js-window'),
+
   $splash = $('#splash'),
   $home = $('#home'),
   $mainContent = $('#main-content');
@@ -46,8 +48,22 @@ function router( hash ) {
 
 }
 
+// LAYOUT FIXES
+function setWindowSized() {
+  $window.css({
+    'width': $(window).width(),
+    'min-height': $(window).height()
+  });
+}
+
 jQuery(document).ready(function () {
   'use strict';
+
+  // LAYOUT
+  setWindowSized();
+  $(window).resize(function() {
+    setWindowSized();
+  });
 
   // ROUTER: on load
   if ( window.location.hash ) {

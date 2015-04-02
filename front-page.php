@@ -27,40 +27,43 @@ get_header();
 
 <!-- main home content -->
 <section id="home">
-  <div class="container">
-    <div class="col col6">
-      <h2><span>Information</span></h2>
-      <?php the_content(); ?>
-<?php
-$args = array (
-'post_type'              => 'clients',
-'order'                  => 'ASC',
-'orderby'                => 'title',
-);
-$query = new WP_Query( $args );
-if ( $query->have_posts() ) {
-?>
-      <h2><span>Clients</span></h2>
-        <ul>
-<?php
-while ( $query->have_posts() ) {
-  $query->the_post();
-  echo '<li><a href="#!/'.$post->post_name.'">'.get_the_title().'</a></li>';
-}
-?>
-        </ul>
-<?php
-} else {
-// no posts found
-}
+  <div id="home-container" class="container u-cf">
+    <div class="u-holder js-window">
+      <div class="u-held">
+        <div class="col col6">
+          <h2><span>Information</span></h2>
+          <?php the_content(); ?>
+    <?php
+    $args = array (
+    'post_type'              => 'clients',
+    'order'                  => 'ASC',
+    'orderby'                => 'title',
+    );
+    $query = new WP_Query( $args );
+    if ( $query->have_posts() ) {
+    ?>
+          <h2><span>Clients</span></h2>
+            <ul>
+    <?php
+    while ( $query->have_posts() ) {
+      $query->the_post();
+      echo '<li><a href="#!/'.$post->post_name.'">'.get_the_title().'</a></li>';
+    }
+    ?>
+            </ul>
+    <?php
+    } else {
+    // no posts found
+    }
 
-// Restore original Post Data
-wp_reset_postdata();
-?>
+    // Restore original Post Data
+    wp_reset_postdata();
+    ?>
 
-<!-- end posts -->
+    <!-- end posts -->
+        </div>
+      </div>
     </div>
-    <div class="u-cf"></div>
   </div>
 </section>
 
