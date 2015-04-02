@@ -37,10 +37,12 @@
   $home_id = get_option('page_on_front');
   $info_meta = get_post_meta($home_id, false);
   $address = $info_meta['_igv_address'][0];
+  $address_replaced = preg_replace(' ','+',$address);
+  $maps_url = 'https://www.google.com.mx/maps/place/'.$address_replaced;
   $email = $info_meta['_igv_email'][0];
 ?>
   <nav id="nav-top-left" class="nav">
-    <?php if($address) { echo $address; } ?>
+    <?php if($address) { echo '<a href="'.$maps_url.'" target="_blank">'.$address.'</a>'; } ?>
   </nav>
 
   <nav id="nav-top-right" class="nav">
