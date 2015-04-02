@@ -734,6 +734,7 @@ ul.u-inline-list li {
 }
 body {
   font-family: 'SchulbuchNord', helvetica, arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
   font-size: 15px;
   line-height: 1.35em;
   letter-spacing: 0.001em;
