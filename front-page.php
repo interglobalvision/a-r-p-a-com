@@ -33,32 +33,32 @@ get_header();
         <div class="col col6">
           <h2><span>Information</span></h2>
           <?php the_content(); ?>
-    <?php
-    $args = array (
-    'post_type'              => 'clients',
-    'order'                  => 'ASC',
-    'orderby'                => 'title',
-    );
-    $query = new WP_Query( $args );
-    if ( $query->have_posts() ) {
-    ?>
-          <h2><span>Clients</span></h2>
-            <ul>
-    <?php
-    while ( $query->have_posts() ) {
-      $query->the_post();
-      echo '<li><a href="#!/'.$post->post_name.'">'.get_the_title().'</a></li>';
-    }
-    ?>
-            </ul>
-    <?php
-    } else {
-    // no posts found
-    }
+<?php
+$args = array (
+  'post_type' => 'clients',
+  'order' => 'ASC',
+  'orderby' => 'title',
+  'posts_per_page' => -1
+);
+$clients = get_posts( $args );
+if ( $clients ) {
+?>
+      <h2><span>Clients</span></h2>
+        <ul>
+<?php
+foreach ($clients as $post) {
+  echo '<li><a href="#!/'.$post->post_name.'">'.get_the_title().'</a></li>';
+}
+?>
+        </ul>
+<?php
+} else {
+// no posts found
+}
 
-    // Restore original Post Data
-    wp_reset_postdata();
-    ?>
+// Restore original Post Data
+wp_reset_postdata();
+?>
 
     <!-- end posts -->
         </div>
