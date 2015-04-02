@@ -96,7 +96,8 @@ jQuery(document).ready(function () {
 	  $masonry.masonry({
 	    columnWidth: '.grid-sizer',
 	    gutterWidth: '.gutter-sizer',
-	    itemSelector: '.item'
+	    itemSelector: '.item',
+      transitionDuration: 0
 	  });
   });
 
