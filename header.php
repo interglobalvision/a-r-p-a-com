@@ -50,7 +50,7 @@
   </nav>
 
   <nav id="nav-bottom-left" class="nav">
-    <a href="<?php home_url(); ?>#!/home">&larr;</a>
+    <a class="back-arrow u-hidden" href="<?php home_url(); ?>#!/home">↗</a>
   </nav>
 
   <nav id="nav-bottom-right" class="nav">

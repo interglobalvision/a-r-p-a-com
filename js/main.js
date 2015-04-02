@@ -20,7 +20,8 @@ var $masonry = $('.js-masonry'),
   $splash = $('#splash'),
   $home = $('#home'),
   $mainContent = $('#main-content');
-  $news = $('#news');
+  $news = $('#news'),
+  $backArrow = $('.back-arrow');
 
 // ROUTER
 function router( hash ) {
@@ -34,11 +35,13 @@ function router( hash ) {
       $news.show();
       $masonry.masonry();
       $news.ScrollTo();
+      $backArrow.removeClass('u-hidden');
 
     } else if ( hash === 'home' ) {
 
       $splash.remove();
       $home.ScrollTo();
+      $backArrow.addClass('u-hidden');
       timeout = setTimeout(function() {
         $mainContent.hide();
         $news.hide();
