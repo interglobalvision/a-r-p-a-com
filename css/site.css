@@ -994,6 +994,9 @@ img {
     font-size: 14px;
     line-height: 1.35em;
   }
+  .tweet {
+    width: 475px;
+  }
 }
 @media screen and (max-width: 1024px) {
   .container {
@@ -1053,9 +1056,6 @@ img {
   }
   #news {
     padding: 34px 0;
-  }
-  .tweet {
-    width: 391px;
   }
 }
 @media screen and (max-width: 816px) {
