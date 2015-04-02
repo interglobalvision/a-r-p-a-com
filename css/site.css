@@ -1196,3 +1196,10 @@ img {
     line-height: 1.35em;
   }
 }
+@media screen and (max-width: 360px) {
+  body {
+    -webkit-font-smoothing: subpixel-antialiased;
+    font-size: 8px;
+    line-height: 1.35em;
+  }
+}
