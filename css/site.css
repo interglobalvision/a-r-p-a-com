@@ -990,12 +990,12 @@ img {
   #news {
     padding: 50px 0;
   }
+  .tweet {
+    width: 160px;
+  }
   body {
     font-size: 14px;
     line-height: 1.35em;
-  }
-  .tweet {
-    width: 475px;
   }
 }
 @media screen and (max-width: 1024px) {
@@ -1057,6 +1057,9 @@ img {
   #news {
     padding: 34px 0;
   }
+  .tweet {
+    width: 391px;
+  }
 }
 @media screen and (max-width: 816px) {
   .container {
@@ -1117,15 +1120,15 @@ img {
   #news {
     padding: 60px 0;
   }
-  body {
-    font-size: 13px;
-    line-height: 1.35em;
-  }
   .tweet {
     width: 100%;
     margin-left: 0;
     margin-right: 0;
     float: none;
+  }
+  body {
+    font-size: 13px;
+    line-height: 1.35em;
   }
 }
 @media screen and (max-width: 600px) {

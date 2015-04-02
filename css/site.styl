@@ -215,7 +215,7 @@ img
 .tweet
   text-align: center
   margin-bottom: 3em
-  width: ( 2 * $col ) + ( ( 2 - 1 ) * $gutter )
+  width: ( 2 * $col ) + $gutter
 
 .tweet-meta
   margin-bottom: .7em
@@ -289,8 +289,12 @@ img
     column-gap: $margin-small
     margin-bottom: $margin-tiny
 
+  // NEWS
   #news
     padding: $margin-small 0
+    
+  .tweet
+    width: ( 2 * $col ) + $gutter
 
   // TYPE
 
@@ -300,10 +304,6 @@ img
   body
     font-size: $font-size-basic
     line-height: $font-leading-basic
-  
-  // NEWS
-  .tweet
-    width: ( ($cols/2) * $col ) + ( ( ($cols/2) - 1 ) * $gutter )
     
 @media screen and (max-width: 1024px)
 
@@ -341,8 +341,12 @@ img
     column-gap: $margin-small
     margin-bottom: $margin-tiny
 
+  // NEWS
   #news
     padding: $margin-small 0
+
+  .tweet
+    width: ( ($cols/2) * $col ) + ( ( ($cols/2) - 1 ) * $gutter )
 
 @media screen and (max-width: 816px)
 
@@ -380,8 +384,15 @@ img
     column-gap: $margin-small
     margin-bottom: $margin-tiny
 
+  // NEWS
   #news
     padding: $margin-basic 0
+    
+  .tweet
+    width: 100%
+    margin-left: 0
+    margin-right: 0
+    float: none
 
   // TYPE
 
@@ -391,13 +402,7 @@ img
   body
     font-size: $font-size-basic
     line-height: $font-leading-basic
-    
-  // NEWS
-  .tweet
-    width: 100%
-    margin-left: 0
-    margin-right: 0
-    float: none
+  
 
 @media screen and (max-width: 600px)
 
