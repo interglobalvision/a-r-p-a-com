@@ -51,7 +51,6 @@ function router( hash ) {
 // LAYOUT FIXES
 function setWindowSized() {
   $window.css({
-    'width': $(window).width(),
     'min-height': $(window).height()
   });
 }
