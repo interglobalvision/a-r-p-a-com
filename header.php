@@ -50,11 +50,11 @@
   </nav>
 
   <nav id="nav-bottom-left" class="nav">
-    <a class="back" href="<?php bloginfo('url'); ?>">&larr;</a>
+    <a href="<?php home_url(); ?>#!/home">&larr;</a>
   </nav>
 
   <nav id="nav-bottom-right" class="nav">
-    <a href="<?php echo home_url('news/'); ?>">News</a>
+    <a href="#!/news">News</a>
   </nav>
 
   <section id="main-container">

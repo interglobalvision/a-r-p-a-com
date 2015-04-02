@@ -31,6 +31,7 @@ for col in 1..$cols
 $margin-small = ($gutter)
 $margin-basic = ($gutter*2)
 $margin-large = ($gutter*5)
+$margin-mega = ($gutter*8)
 
 $font-size-basic = 15px
 $font-leading-basic = 1.35em
@@ -94,10 +95,8 @@ img
 
 // STRUCTURE
 
-#main-container
-  section
-    margin: 0 0 $margin-basic
-
+#main-content
+  margin-top: $margin-large
 
 // SPLASH
 
@@ -187,19 +186,11 @@ body.page
     column-gap: $gutter
 
 
-// POSTS LOOP
-
-#posts
-  width: 100%
-
-.post
-  width: 100%
-
-#pagination
-  width: 100%
-
-
 // NEWS
+
+#news
+  display: none
+  padding: $margin-small 0
 
 .tweet
   text-align: center

@@ -762,8 +762,8 @@ img {
   max-width: 100%;
   height: auto;
 }
-#main-container section {
-  margin: 0 0 168px;
+#main-content {
+  margin-top: 420px;
 }
 #splash {
   width: 100%;
@@ -854,14 +854,9 @@ body.page .back {
      -moz-column-gap: 84px;
           column-gap: 84px;
 }
-#posts {
-  width: 100%;
-}
-.post {
-  width: 100%;
-}
-#pagination {
-  width: 100%;
+#news {
+  display: none;
+  padding: 84px 0;
 }
 .tweet {
   text-align: center;

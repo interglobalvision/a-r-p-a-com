@@ -25,53 +25,48 @@ get_header();
   </a>
 </section>
 
-<main id="main-content">
-
-  <!-- main posts loop -->
-  <section id="home">
-    <div class="container">
-      <div class="col col6">
-        <h2><span>Information</span></h2>
-        <?php the_content(); ?>
+<!-- main home content -->
+<section id="home">
+  <div class="container">
+    <div class="col col6">
+      <h2><span>Information</span></h2>
+      <?php the_content(); ?>
 <?php
-//CLIENTS
-
 $args = array (
-  'post_type'              => 'clients',
-  'order'                  => 'ASC',
-  'orderby'                => 'title',
+'post_type'              => 'clients',
+'order'                  => 'ASC',
+'orderby'                => 'title',
 );
-
 $query = new WP_Query( $args );
-
 if ( $query->have_posts() ) {
 ?>
-        <h2><span>Clients</span></h2>
-          <ul>
+      <h2><span>Clients</span></h2>
+        <ul>
 <?php
-  while ( $query->have_posts() ) {
-    $query->the_post();
-    echo '<li><a href="#'.$post->post_name.'">'.get_the_title().'</a></li>';
-  }
+while ( $query->have_posts() ) {
+  $query->the_post();
+  echo '<li><a href="#!/'.$post->post_name.'">'.get_the_title().'</a></li>';
+}
 ?>
-          </ul>
+        </ul>
 <?php
 } else {
-  // no posts found
+// no posts found
 }
 
 // Restore original Post Data
 wp_reset_postdata();
 ?>
 
-  <!-- end posts -->
-      </div>
-      <div class="u-cf"></div>
+<!-- end posts -->
     </div>
-  </section>
+    <div class="u-cf"></div>
+  </div>
+</section>
 
+<main id="main-content">
 
-  <!-- result -->
+  <!-- ajax content -->
   <section id="result">
 
   <!-- end result -->
