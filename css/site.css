@@ -861,7 +861,7 @@ body.page .back {
 }
 #home p,
 #home li {
-  font-size: 2em;
+  font-size: 1.7em;
   text-align: center;
   line-height: 1.35em;
 }
@@ -872,6 +872,9 @@ body.page .back {
   -webkit-column-gap: 84px;
      -moz-column-gap: 84px;
           column-gap: 84px;
+}
+#home ul li a {
+  border-bottom: none;
 }
 #posts {
   width: 100%;
