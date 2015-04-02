@@ -37,7 +37,7 @@
   $home_id = get_option('page_on_front');
   $info_meta = get_post_meta($home_id, false);
   $address = $info_meta['_igv_address'][0];
-  $address_replaced = preg_replace(' ','+',$address);
+  $address_replaced = preg_replace("/[\s]/","+",$address);
   $maps_url = 'https://www.google.com.mx/maps/place/'.$address_replaced;
   $email = $info_meta['_igv_email'][0];
 ?>
