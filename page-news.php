@@ -12,18 +12,7 @@ get_header();
       <div class="grid-sizer"></div>
       <div class="gutter-sizer"></div>
 <?php
-function link_it($text) {
-  $text= preg_replace("/ @(\w+)/", ' <a href="http://www.twitter.com/$1" target="_blank">@$1</a>', $text);
-  $text= preg_replace("/\#(\w+)/", '<a href="http://search.twitter.com/search?q=$1" target="_blank">#$1</a>',$text);
-  return($text);
-}
-
 require_once('lib/oauth/twitterauth.php');
-function getConnectionWithAccessToken($oauth_token, $oauth_token_secret) {
-  $connection = new TwitterOAuth('ElYwUKMwhrghoTHilLXPuQ', 'lfkur0NztBaSOI8uNbawatyYLcz3mdCyK0u5PxJD8', $oauth_token, $oauth_token_secret);
-  return $connection;
-}
-
 $connection = getConnectionWithAccessToken("188722649-uikbR3s3hmh9gzx2IGul9m41gZFAcwpPw1JavWY9", "UhanOS1qRVW9Xx894ZkfvHhAYS0E6HCJ0SkeH9Kpw");
 $content = $connection->get("statuses/user_timeline.json?user_id=507457447&count=100&trim_user=1&include_entities=1&exclude_replies=true&include_rts=false");
 
