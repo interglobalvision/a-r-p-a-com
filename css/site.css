@@ -781,33 +781,32 @@ img {
   position: absolute;
   cursor: pointer;
 }
-.splash-text {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-size: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  font-size: 0;
+#splash-arpa svg,
+#splash-noon svg {
+  height: 80px;
 }
 #splash-arpa {
-  background-color: #fdfdfd;
   left: 0;
+  background-color: #fdfdfd;
 }
-#splash-arpa .splash-text {
-  background-image: url("../img/svg/arpa_blue.svg");
+#splash-arpa:hover {
+  background-color: #00f;
+}
+#splash-arpa:hover svg path {
+  fill: #fdfdfd;
 }
 #splash-noon {
   left: 50%;
   background-color: #00f;
   background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  background-position: center center;
 }
-#splash-noon .splash-text {
-  background-image: url("../img/svg/noon_white.svg");
+#splash-noon:hover {
+  background-image: none !important;
+  background-color: #fdfdfd;
+}
+#splash-noon:hover svg path {
+  fill: #0e0e0e;
 }
 .nav {
   position: fixed;

@@ -115,32 +115,29 @@ img
   top: 0
   position: absolute
   cursor: pointer
-
-.splash-text
-  width: 100%
-  height: 100%
-  position: absolute
-  top: 0
-  left: 0
-  background-size: 100%
-  background-position: center
-  background-repeat: no-repeat
-  font-size: 0
+  svg
+    height: 80px
 
 #splash-arpa
-  background-color: $color-white-soft
   left: 0
-  .splash-text
-    background-image: url('../img/svg/arpa_blue.svg')
+  background-color: $color-white-soft
+  &:hover
+    background-color: $color-blue
+    svg
+      path
+        fill: $color-white-soft
 
 #splash-noon
   left: 50%
   background-color: $color-blue
   background-size: cover
-  background-position: center
-  background-repeat: no-repeat
-  .splash-text
-    background-image: url('../img/svg/noon_white.svg')
+  background-position: center center
+  &:hover
+    background-image: none !important
+    background-color: $color-white-soft
+    svg
+      path
+        fill: $color-black-soft
 
 
 // HEADER
