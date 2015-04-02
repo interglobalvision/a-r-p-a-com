@@ -54,7 +54,7 @@
   </nav>
 
   <nav id="nav-bottom-right" class="nav">
-    <a href="#!/news">News</a>
+    <a class="js-news-link" href="#!/news">News</a>
   </nav>
 
   <section id="main-container">

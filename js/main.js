@@ -22,6 +22,7 @@ var $masonry = $('.js-masonry'),
   $mainContent = $('#main-content');
   $news = $('#news'),
   $backArrow = $('.back-arrow');
+  $newsLink = $('.js-news-link');
 
 // ROUTER
 function router( hash ) {
@@ -36,12 +37,14 @@ function router( hash ) {
       $masonry.masonry();
       $news.ScrollTo();
       $backArrow.removeClass('u-hidden');
+      $newsLink.addClass('u-hidden');
 
     } else if ( hash === 'home' ) {
 
       $splash.remove();
       $home.ScrollTo();
       $backArrow.addClass('u-hidden');
+      $newsLink.removeClass('u-hidden');
       timeout = setTimeout(function() {
         $mainContent.hide();
         $news.hide();
