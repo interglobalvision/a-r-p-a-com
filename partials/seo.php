@@ -17,7 +17,7 @@ if( !empty($thumb) ) {
 <?php
 } else {
 ?>
-  <meta property="og:image" content="<?php bloginfo('stylesheet_directory'); ?>/img/arpa-og.jpg" />
+  <meta property="og:image" content="<?php bloginfo('stylesheet_directory'); ?>/img/arpa-og-1.jpg" />
 <?php
 }
 if( is_home() ) {
