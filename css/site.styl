@@ -190,6 +190,7 @@ img
 
 #home-container
   height: 100%
+  padding-top: $margin-tiny
 
 #home
   p, li
@@ -280,6 +281,9 @@ img
   h2
     margin: $margin-tiny 0
 
+  #home-container
+    padding-top: $margin-tiny
+
   #main-content
     margin-top: $margin-large
 
@@ -331,6 +335,9 @@ img
   #main-content
     margin-top: $margin-large
 
+  #home-container
+    padding-top: $margin-tiny
+
   #clients
     column-gap: $margin-small
     margin-bottom: $margin-tiny
@@ -350,8 +357,8 @@ img
 @media screen and (max-width: 600px)
 
   // LAYOUT
-  $col = 25px
-  $gutter = 25px
+  $col = 20px
+  $gutter = 32px
   $margin-small = ($gutter)
   $margin-basic = ($gutter*2)
   $margin-large = ($gutter*5)
@@ -378,6 +385,9 @@ img
 
   #main-content
     margin-top: $margin-large
+
+  #home-container
+    padding-top: $margin-tiny
 
   #clients
     column-gap: $margin-small
