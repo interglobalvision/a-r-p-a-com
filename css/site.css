@@ -854,12 +854,6 @@ img {
   bottom: 2%;
   left: 2%;
 }
-.back {
-  display: none;
-}
-body.page .back {
-  display: block;
-}
 #home-container {
   height: 100%;
 }
