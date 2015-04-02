@@ -776,6 +776,7 @@ img {
   height: auto;
 }
 #main-content {
+  display: none;
   margin-top: 420px;
 }
 #splash {
