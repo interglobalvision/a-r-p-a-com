@@ -1115,7 +1115,7 @@ img {
     margin-bottom: 15px;
   }
   #news {
-    padding: 30px 0;
+    padding: 60px 0;
   }
   body {
     font-size: 13px;
@@ -1176,7 +1176,7 @@ img {
     margin: 5px 0;
   }
   #main-content {
-    margin-top: 80px;
+    margin-top: 50px;
   }
   #home-container {
     padding-top: 5px;
@@ -1188,7 +1188,7 @@ img {
     margin-bottom: 5px;
   }
   #news {
-    padding: 10px 0;
+    padding: 80px 0;
   }
   body {
     -webkit-font-smoothing: subpixel-antialiased;
