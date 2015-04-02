@@ -681,6 +681,20 @@ ul.u-inline-list li {
 .genericon-zoom:before {
   content: "\f402";
 }
+@font-face {
+  font-family: 'SchulbuchNord';
+  src: url("fonts/SchulbuchNord-Normal.eot");
+  src: url("fonts/SchulbuchNord-Normal.eot?#iefix") format('embedded-opentype'), url("fonts/SchulbuchNord-Normal.woff") format('woff'), url("fonts/SchulbuchNord-Normal.svg") format('svg'), url("fonts/SchulbuchNord-Normal.ttf") format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'SchulbuchSued';
+  src: url("fonts/SchulbuchSued-Normal.eot");
+  src: url("fonts/SchulbuchSued-Normal.eot?#iefix") format('embedded-opentype'), url("fonts/SchulbuchSued-Normal.woff") format('woff'), url("fonts/SchulbuchSued-Normal.svg") format('svg'), url("fonts/SchulbuchSued-Normal.ttf") format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 .container {
   margin: 0 auto;
   width: 1044px;
@@ -719,7 +733,7 @@ ul.u-inline-list li {
   width: 84px;
 }
 body {
-  font-family: helvetica, arial, sans-serif;
+  font-family: 'SchulbuchNord', helvetica, arial, sans-serif;
   font-size: 15px;
   line-height: 1.35em;
   letter-spacing: 0.001em;
