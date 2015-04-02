@@ -23,8 +23,7 @@ function errorNotify(error){
 
 gulp.task('js', function() {
   gulp.src([
-    'js/main.js',
-    'js/library.js'
+    'js/main.js'
   ])
   .pipe(sourcemaps.init())
   .pipe(jshint())
