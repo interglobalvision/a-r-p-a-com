@@ -112,4 +112,17 @@ function is_single_type($type, $post) {
   }
 }
 
+// TWITTER FEED FUNCTIONS
+
+function link_it($text) {
+  $text= preg_replace("/ @(\w+)/", ' <a href="http://www.twitter.com/$1" target="_blank">@$1</a>', $text);
+  $text= preg_replace("/\#(\w+)/", '<a href="http://search.twitter.com/search?q=$1" target="_blank">#$1</a>',$text);
+  return($text);
+}
+
+function getConnectionWithAccessToken($oauth_token, $oauth_token_secret) {
+  $connection = new TwitterOAuth('ElYwUKMwhrghoTHilLXPuQ', 'lfkur0NztBaSOI8uNbawatyYLcz3mdCyK0u5PxJD8', $oauth_token, $oauth_token_secret);
+  return $connection;
+}
+
 ?>
