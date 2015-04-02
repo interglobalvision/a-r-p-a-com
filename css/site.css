@@ -878,6 +878,11 @@ img {
   text-align: center;
   line-height: 1.35em;
 }
+#home p {
+  max-width: 900px;
+  display: block;
+  margin: 0 auto 1em;
+}
 #clients {
   -webkit-column-count: 2;
      -moz-column-count: 2;
@@ -933,44 +938,44 @@ img {
 }
 @media screen and (max-width: 1360px) {
   .container {
-    width: 1050px;
+    width: 1150px;
   }
   .col {
     margin-left: 25px;
     margin-right: 25px;
   }
   .col1 {
-    width: 55px;
+    width: 65px;
   }
   .col2 {
-    width: 160px;
+    width: 180px;
   }
   .col3 {
-    width: 265px;
+    width: 295px;
   }
   .col4 {
-    width: 370px;
+    width: 410px;
   }
   .col5 {
-    width: 475px;
+    width: 525px;
   }
   .col6 {
-    width: 580px;
+    width: 640px;
   }
   .col7 {
-    width: 685px;
+    width: 755px;
   }
   .col8 {
-    width: 790px;
+    width: 870px;
   }
   .col9 {
-    width: 895px;
+    width: 985px;
   }
   .col10 {
-    width: 1000px;
+    width: 1100px;
   }
   .grid-sizer {
-    width: 105px;
+    width: 115px;
   }
   .gutter-sizer {
     width: 50px;
@@ -991,14 +996,14 @@ img {
     padding: 50px 0;
   }
   .tweet {
-    width: 160px;
+    width: 180px;
   }
   body {
     font-size: 14px;
     line-height: 1.35em;
   }
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1150px) {
   .container {
     width: 850px;
   }
@@ -1061,7 +1066,7 @@ img {
     width: 391px;
   }
 }
-@media screen and (max-width: 816px) {
+@media screen and (max-width: 850px) {
   .container {
     width: 630px;
   }
@@ -1131,7 +1136,7 @@ img {
     line-height: 1.35em;
   }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 630px) {
   .container {
     width: 290px;
   }

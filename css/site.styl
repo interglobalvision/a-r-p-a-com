@@ -196,6 +196,10 @@ img
     font-size: 1.7em
     text-align: center
     line-height: $font-leading-basic
+  p 
+    max-width: 900px;
+    display: block
+    margin: 0 auto 1em
 
 #clients
   column-count: 2
@@ -256,7 +260,7 @@ img
 @media screen and (max-width: ($col * $cols)+($gutter * $cols))
 
   // LAYOUT
-  $col = 55px
+  $col = 65px
   $gutter = 50px
   $margin-small = ($gutter)
   $margin-basic = ($gutter*2)
@@ -305,7 +309,7 @@ img
     font-size: $font-size-basic
     line-height: $font-leading-basic
     
-@media screen and (max-width: 1024px)
+@media screen and (max-width: 1150px)
 
   // LAYOUT
   $col = 51px
@@ -348,7 +352,7 @@ img
   .tweet
     width: ( ($cols/2) * $col ) + ( ( ($cols/2) - 1 ) * $gutter )
 
-@media screen and (max-width: 816px)
+@media screen and (max-width: 850px)
 
   // LAYOUT
   $col = 33px
@@ -404,7 +408,7 @@ img
     line-height: $font-leading-basic
   
 
-@media screen and (max-width: 600px)
+@media screen and (max-width: 630px)
 
   // LAYOUT
   $col = 19px
