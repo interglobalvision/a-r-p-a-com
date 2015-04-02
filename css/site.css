@@ -878,6 +878,9 @@ img {
   text-align: center;
   line-height: 1.35em;
 }
+#home a {
+  line-height: 1.35em;
+}
 #clients {
   -webkit-column-count: 2;
      -moz-column-count: 2;
