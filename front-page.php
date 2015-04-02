@@ -5,12 +5,22 @@ get_header();
 <!-- main content -->
 
 <section id="splash">
-  <div id="splash-arpa">
-    <div class="splash-text">ARPA</div>
+  <div id="splash-arpa" class="u-holder u-align-center">
+    <div class="u-held">
+      <?php echo file_get_contents(get_bloginfo('stylesheet_directory') . '/img/optimized/arpa.svg'); ?>
+    </div>
   </div>
-  <a href="#">
-    <div id="splash-noon">
-      <div class="splash-text">NOON</div>
+  <a href="http://n-o-o-n.co.uk">
+    <div id="splash-noon" class="u-holder u-align-center"
+<?php
+  $noonImage = json_decode(file_get_contents('http://n-o-o-n.co.uk/data/'));
+  if ($noonImage->noon) {
+    echo 'style="background-image: url(' . $noonImage->noon . ')"';
+  }
+?>>
+      <div class="u-held">
+        <?php echo file_get_contents(get_bloginfo('stylesheet_directory') . '/img/optimized/noon.svg'); ?>
+      </div>
     </div>
   </a>
 </section>
