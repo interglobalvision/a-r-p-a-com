@@ -124,18 +124,24 @@ img
 
 #splash-arpa
   left: 0
-  background-color: $color-white-soft
+  background-color: $color-blue
+  svg
+    path
+      fill: $color-white-soft
   &:hover
-    background-color: $color-blue
+    background-color: $color-white-soft
     svg
       path
-        fill: $color-white-soft
+        fill: $color-blue
 
 #splash-noon
   left: 50%
   background-color: $color-blue
   background-size: cover
   background-position: center center
+  svg
+      path
+        fill: $color-white-soft
   &:hover
     background-image: none !important
     background-color: $color-white-soft

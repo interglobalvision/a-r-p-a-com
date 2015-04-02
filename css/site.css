@@ -801,19 +801,25 @@ img {
 }
 #splash-arpa {
   left: 0;
-  background-color: #fdfdfd;
-}
-#splash-arpa:hover {
   background-color: #00f;
 }
-#splash-arpa:hover svg path {
+#splash-arpa svg path {
   fill: #fdfdfd;
+}
+#splash-arpa:hover {
+  background-color: #fdfdfd;
+}
+#splash-arpa:hover svg path {
+  fill: #00f;
 }
 #splash-noon {
   left: 50%;
   background-color: #00f;
   background-size: cover;
   background-position: center center;
+}
+#splash-noon svg path {
+  fill: #fdfdfd;
 }
 #splash-noon:hover {
   background-image: none !important;
