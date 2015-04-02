@@ -765,7 +765,6 @@ a:active,
 a:visited {
   color: inherit;
   text-decoration: none;
-  padding-bottom: 1px;
   border-bottom: 1px solid #fdfdfd;
 }
 html {
