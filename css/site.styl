@@ -4,6 +4,7 @@
 $cols = 6
 $col = 90px
 $gutter = 84px
+
 .container
   margin: 0 auto
   width: ($col * $cols)+($gutter * $cols)
@@ -23,6 +24,7 @@ for col in 1..$cols
 
 .gutter-sizer
   width: $gutter
+
 
 // VARIABLES
 
@@ -90,7 +92,12 @@ img
   height: auto
 
 
-//the 100% widths are just so stylus can compile delete as desired
+// STRUCTURE
+
+#main-container
+  section
+    margin: 0 0 $margin-basic
+
 
 // SPLASH
 
@@ -135,6 +142,7 @@ img
   .splash-text
     background-image: url('../img/svg/noon_white.svg')
 
+
 // HEADER
 
 .nav
@@ -169,14 +177,8 @@ body.page
   .back
     display: block
 
+
 // HOME
-
-#main-container
-  section
-    margin: 0 0 $margin-basic
-
-
-
 
 #home
   p, li
@@ -184,12 +186,12 @@ body.page
     text-align: center
     line-height: $font-leading-basic
   ul
-    -webkit-column-count: 2
-    -webkit-column-gap: $gutter
     column-count: 2
     column-gap: $gutter
 
+
 // POSTS LOOP
+
 #posts
   width: 100%
 
@@ -199,7 +201,9 @@ body.page
 #pagination
   width: 100%
 
+
 // NEWS
+
 .tweet
   text-align: center
   margin-bottom: 3em
