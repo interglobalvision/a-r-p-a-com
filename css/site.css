@@ -690,40 +690,52 @@ ul.u-inline-list li {
 }
 .container {
   margin: 0 auto;
-  width: 1044px;
+  width: 1360px;
 }
 .row {
   clear: both;
 }
 .col {
   float: left;
-  margin-left: 42px;
-  margin-right: 42px;
+  margin-left: 30px;
+  margin-right: 30px;
   box-sizing: content-box;
 }
 .col1 {
-  width: 90px;
+  width: 76px;
 }
 .col2 {
-  width: 264px;
+  width: 212px;
 }
 .col3 {
-  width: 438px;
+  width: 348px;
 }
 .col4 {
-  width: 612px;
+  width: 484px;
 }
 .col5 {
-  width: 786px;
+  width: 620px;
 }
 .col6 {
-  width: 960px;
+  width: 756px;
+}
+.col7 {
+  width: 892px;
+}
+.col8 {
+  width: 1028px;
+}
+.col9 {
+  width: 1164px;
+}
+.col10 {
+  width: 1300px;
 }
 .grid-sizer {
-  width: 174px;
+  width: 136px;
 }
 .gutter-sizer {
-  width: 84px;
+  width: 60px;
 }
 body {
   font-family: 'SchulbuchNord', helvetica, arial, sans-serif;
@@ -740,7 +752,7 @@ h2 {
   font-weight: normal;
   display: block;
   text-align: center;
-  margin: 42px 0;
+  margin: 30px 0;
 }
 h2 span {
   border-bottom: 1px solid #fdfdfd;
@@ -771,7 +783,7 @@ img {
 }
 #main-content {
   display: none;
-  margin-top: 420px;
+  margin-top: 300px;
 }
 #splash {
   width: 100%;
@@ -859,7 +871,6 @@ img {
 }
 #home-container {
   height: 100%;
-  padding-top: 42px;
 }
 #home p,
 #home li {
@@ -871,21 +882,22 @@ img {
   -webkit-column-count: 2;
      -moz-column-count: 2;
           column-count: 2;
-  -webkit-column-gap: 84px;
-     -moz-column-gap: 84px;
-          column-gap: 84px;
-  margin-bottom: 42px;
+  -webkit-column-gap: 60px;
+     -moz-column-gap: 60px;
+          column-gap: 60px;
+  margin-bottom: 30px;
 }
 #clients li a {
   border-bottom: none;
 }
 #news {
   display: none;
-  padding: 84px 0;
+  padding: 60px 0;
 }
 .tweet {
   text-align: center;
   margin-bottom: 3em;
+  width: 212px;
 }
 .tweet-meta {
   margin-bottom: 0.7em;
@@ -918,64 +930,76 @@ img {
     top: 50%;
   }
 }
-@media screen and (max-width: 1044px) {
+@media screen and (max-width: 1360px) {
   .container {
-    width: 816px;
+    width: 1010px;
   }
   .col {
-    margin-left: 28px;
-    margin-right: 28px;
+    margin-left: 25px;
+    margin-right: 25px;
   }
   .col1 {
-    width: 80px;
+    width: 51px;
   }
   .col2 {
-    width: 216px;
+    width: 152px;
   }
   .col3 {
-    width: 352px;
+    width: 253px;
   }
   .col4 {
-    width: 488px;
+    width: 354px;
   }
   .col5 {
-    width: 624px;
+    width: 455px;
   }
   .col6 {
-    width: 760px;
+    width: 556px;
+  }
+  .col7 {
+    width: 657px;
+  }
+  .col8 {
+    width: 758px;
+  }
+  .col9 {
+    width: 859px;
+  }
+  .col10 {
+    width: 960px;
   }
   .grid-sizer {
-    width: 136px;
+    width: 101px;
   }
   .gutter-sizer {
-    width: 56px;
+    width: 50px;
   }
   h2 {
-    margin: 28px 0;
-  }
-  #home-container {
-    padding-top: 28px;
+    margin: 25px 0;
   }
   #main-content {
-    margin-top: 280px;
+    margin-top: 250px;
   }
   #clients {
-    -webkit-column-gap: 56px;
-       -moz-column-gap: 56px;
-            column-gap: 56px;
-    margin-bottom: 28px;
+    -webkit-column-gap: 50px;
+       -moz-column-gap: 50px;
+            column-gap: 50px;
+    margin-bottom: 25px;
   }
   #news {
-    padding: 56px 0;
+    padding: 50px 0;
   }
   body {
     font-size: 14px;
     line-height: 1.35em;
   }
+  .tweet {
+    width: 455px;
+  }
 }
 @media screen and (max-width: 816px) {
   .container {
-    width: 600px;
+    width: 1000px;
   }
   .col {
     margin-left: 20px;
@@ -999,6 +1023,18 @@ img {
   .col6 {
     width: 560px;
   }
+  .col7 {
+    width: 660px;
+  }
+  .col8 {
+    width: 760px;
+  }
+  .col9 {
+    width: 860px;
+  }
+  .col10 {
+    width: 960px;
+  }
   .grid-sizer {
     width: 100px;
   }
@@ -1010,9 +1046,6 @@ img {
   }
   #main-content {
     margin-top: 200px;
-  }
-  #home-container {
-    padding-top: 20px;
   }
   #clients {
     -webkit-column-gap: 40px;
@@ -1030,7 +1063,7 @@ img {
 }
 @media screen and (max-width: 600px) {
   .container {
-    width: 312px;
+    width: 520px;
   }
   .col {
     margin-left: 16px;
@@ -1053,6 +1086,18 @@ img {
   }
   .col6 {
     width: 280px;
+  }
+  .col7 {
+    width: 332px;
+  }
+  .col8 {
+    width: 384px;
+  }
+  .col9 {
+    width: 436px;
+  }
+  .col10 {
+    width: 488px;
   }
   .grid-sizer {
     width: 52px;
@@ -1088,5 +1133,8 @@ img {
     -webkit-font-smoothing: subpixel-antialiased;
     font-size: 10px;
     line-height: 1.35em;
+  }
+  .tweet {
+    width: 488px;
   }
 }

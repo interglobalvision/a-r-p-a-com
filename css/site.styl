@@ -2,9 +2,9 @@
 @import "helpers"
 @import "fonts"
 
-$cols = 6
-$col = 90px
-$gutter = 84px
+$cols = 10
+$col = 76px
+$gutter = 60px
 
 .container
   margin: 0 auto
@@ -190,7 +190,6 @@ img
 
 #home-container
   height: 100%
-  padding-top: $margin-tiny
 
 #home
   p, li
@@ -216,6 +215,7 @@ img
 .tweet
   text-align: center
   margin-bottom: 3em
+  width: ( 2 * $col ) + ( ( 2 - 1 ) * $gutter )
 
 .tweet-meta
   margin-bottom: .7em
@@ -255,8 +255,8 @@ img
 @media screen and (max-width: ($col * $cols)+($gutter * $cols))
 
   // LAYOUT
-  $col = 80px
-  $gutter = 56px
+  $col = 51px
+  $gutter = 50px
   $margin-small = ($gutter)
   $margin-basic = ($gutter*2)
   $margin-large = ($gutter*5)
@@ -281,9 +281,6 @@ img
   h2
     margin: $margin-tiny 0
 
-  #home-container
-    padding-top: $margin-tiny
-
   #main-content
     margin-top: $margin-large
 
@@ -302,6 +299,10 @@ img
   body
     font-size: $font-size-basic
     line-height: $font-leading-basic
+    
+  // NEWS
+  .tweet
+    width: ( ($cols/2) * $col ) + ( ( ($cols/2) - 1 ) * $gutter )
 
 @media screen and (max-width: 816px)
 
@@ -334,9 +335,6 @@ img
 
   #main-content
     margin-top: $margin-large
-
-  #home-container
-    padding-top: $margin-tiny
 
   #clients
     column-gap: $margin-small
@@ -414,3 +412,7 @@ img
     -webkit-font-smoothing: subpixel-antialiased
     font-size: $font-size-basic
     line-height: $font-leading-basic
+    
+  // NEWS
+  .tweet
+    width: ( $cols * $col ) + ( ( $cols - 1 ) * $gutter )

@@ -30,7 +30,7 @@ get_header();
   <div id="home-container" class="container u-cf">
     <div class="u-holder js-window">
       <div class="u-held">
-        <div class="col col6">
+        <div class="col col10">
           <h2><span>Information</span></h2>
           <?php the_content(); ?>
 <?php
@@ -91,7 +91,7 @@ if ($content) {
   foreach ($content as $tweet) {
     if ($i < 30) {
 
-      echo '<article class="col col3 tweet item" id="tweet-' . $tweet->id_str . '">';
+      echo '<article class="col tweet item" id="tweet-' . $tweet->id_str . '">';
 
       echo '<div class="tweet-meta"><a target="_blank" href="https://twitter.com/__ARPA__/status/' . $tweet->id_str . '">';
       $time = strtotime($tweet->created_at);
@@ -126,10 +126,10 @@ if ($content) {
     }
   }
 
-  echo '<article class="col col6 u-pointer" id="follow-us"><a href="https://twitter.com/intent/follow?original_referer=http%3A%2F%2Fa-r-p-a.com&amp;screen_name=__ARPA__" target="_blank">Follow us on Twitter</a></article>';
+  echo '<article class="col col10 u-pointer" id="follow-us"><a href="https://twitter.com/intent/follow?original_referer=http%3A%2F%2Fa-r-p-a.com&amp;screen_name=__ARPA__" target="_blank">Follow us on Twitter</a></article>';
 
 } else {
-  echo '<article class="col col6">Twitter failed to load :{</article>';
+  echo '<article class="col col5">Twitter failed to load :{</article>';
 }
 ?>
   <!-- end news -->
