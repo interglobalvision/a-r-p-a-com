@@ -1,5 +1,6 @@
 @import "sanitize"
 @import "helpers"
+@import "fonts"
 
 $cols = 6
 $col = 90px
@@ -45,8 +46,11 @@ $color-blue = #0000FF
 
 // TYPOGRAPHY
 
+$font-nord = 'SchulbuchNord'
+$font-sued = 'SchulbuchSued'
+
 body
-  font-family:helvetica,arial,sans-serif
+  font-family: $font-nord, helvetica, arial, sans-serif
   font-size: $font-size-basic
   line-height: $font-leading-basic
   letter-spacing: $font-tracking-basic
@@ -55,11 +59,11 @@ h1
   font-size: 3em
 
 h2
-  font-size: 1.2em
+  font-size: 1em
   font-weight: normal
   display: block
   text-align: center
-  margin: $margin-small 0
+  margin: 3em 0
   span
     border-bottom: 1px solid $color-white-soft
 
@@ -78,7 +82,6 @@ li
 a,a:active,a:visited
   color:inherit
   text-decoration: none
-  padding-bottom: 1px
   border-bottom: 1px solid $color-white-soft
 
 
@@ -97,6 +100,7 @@ img
 
 #main-content
   margin-top: $margin-large
+
 
 // SPLASH
 
@@ -119,18 +123,24 @@ img
 
 #splash-arpa
   left: 0
-  background-color: $color-white-soft
+  background-color: $color-blue
+  svg
+    path
+      fill: $color-white-soft
   &:hover
-    background-color: $color-blue
+    background-color: $color-white-soft
     svg
       path
-        fill: $color-white-soft
+        fill: $color-blue
 
 #splash-noon
   left: 50%
   background-color: $color-blue
   background-size: cover
   background-position: center center
+  svg
+    path
+      fill: $color-white-soft
   &:hover
     background-image: none !important
     background-color: $color-white-soft
@@ -178,12 +188,15 @@ body.page
 
 #home
   p, li
-    font-size: 2em
+    font-size: 1.7em
     text-align: center
     line-height: $font-leading-basic
   ul
     column-count: 2
     column-gap: $gutter
+    li
+      a
+        border-bottom: none
 
 
 // NEWS

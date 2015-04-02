@@ -681,6 +681,20 @@ ul.u-inline-list li {
 .genericon-zoom:before {
   content: "\f402";
 }
+@font-face {
+  font-family: 'SchulbuchNord';
+  src: url("fonts/SchulbuchNord-Normal.eot");
+  src: url("fonts/SchulbuchNord-Normal.eot?#iefix") format('embedded-opentype'), url("fonts/SchulbuchNord-Normal.woff") format('woff'), url("fonts/SchulbuchNord-Normal.svg") format('svg'), url("fonts/SchulbuchNord-Normal.ttf") format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'SchulbuchSued';
+  src: url("fonts/SchulbuchSued-Normal.eot");
+  src: url("fonts/SchulbuchSued-Normal.eot?#iefix") format('embedded-opentype'), url("fonts/SchulbuchSued-Normal.woff") format('woff'), url("fonts/SchulbuchSued-Normal.svg") format('svg'), url("fonts/SchulbuchSued-Normal.ttf") format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 .container {
   margin: 0 auto;
   width: 1044px;
@@ -719,7 +733,7 @@ ul.u-inline-list li {
   width: 84px;
 }
 body {
-  font-family: helvetica, arial, sans-serif;
+  font-family: 'SchulbuchNord', helvetica, arial, sans-serif;
   font-size: 15px;
   line-height: 1.35em;
   letter-spacing: 0.001em;
@@ -728,11 +742,11 @@ h1 {
   font-size: 3em;
 }
 h2 {
-  font-size: 1.2em;
+  font-size: 1em;
   font-weight: normal;
   display: block;
   text-align: center;
-  margin: 84px 0;
+  margin: 3em 0;
 }
 h2 span {
   border-bottom: 1px solid #fdfdfd;
@@ -751,7 +765,6 @@ a:active,
 a:visited {
   color: inherit;
   text-decoration: none;
-  padding-bottom: 1px;
   border-bottom: 1px solid #fdfdfd;
 }
 html {
@@ -787,19 +800,25 @@ img {
 }
 #splash-arpa {
   left: 0;
-  background-color: #fdfdfd;
-}
-#splash-arpa:hover {
   background-color: #00f;
 }
-#splash-arpa:hover svg path {
+#splash-arpa svg path {
   fill: #fdfdfd;
+}
+#splash-arpa:hover {
+  background-color: #fdfdfd;
+}
+#splash-arpa:hover svg path {
+  fill: #00f;
 }
 #splash-noon {
   left: 50%;
   background-color: #00f;
   background-size: cover;
   background-position: center center;
+}
+#splash-noon svg path {
+  fill: #fdfdfd;
 }
 #splash-noon:hover {
   background-image: none !important;
@@ -842,7 +861,7 @@ body.page .back {
 }
 #home p,
 #home li {
-  font-size: 2em;
+  font-size: 1.7em;
   text-align: center;
   line-height: 1.35em;
 }
@@ -853,6 +872,9 @@ body.page .back {
   -webkit-column-gap: 84px;
      -moz-column-gap: 84px;
           column-gap: 84px;
+}
+#home ul li a {
+  border-bottom: none;
 }
 #news {
   display: none;
