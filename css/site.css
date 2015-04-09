@@ -740,7 +740,7 @@ ul.u-inline-list li {
 body {
   font-family: 'SchulbuchNord', helvetica, arial, sans-serif;
   -webkit-font-smoothing: antialiased;
-  font-size: 15px;
+  font-size: 13px;
   line-height: 1.35em;
   letter-spacing: 0.001em;
 }
@@ -898,6 +898,7 @@ img {
 #news {
   display: none;
   padding: 60px 0;
+  letter-spacing: 0.07em;
 }
 .tweet {
   text-align: center;
@@ -999,7 +1000,7 @@ img {
     width: 180px;
   }
   body {
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.35em;
   }
 }
@@ -1132,7 +1133,7 @@ img {
     float: none;
   }
   body {
-    font-size: 13px;
+    font-size: 11px;
     line-height: 1.35em;
   }
 }

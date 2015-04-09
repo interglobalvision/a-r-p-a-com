@@ -35,9 +35,10 @@ $margin-large = ($gutter*5)
 $margin-mega = ($gutter*8)
 $margin-tiny = ($gutter/2)
 
-$font-size-basic = 15px
+$font-size-basic = 13px
 $font-leading-basic = 1.35em
 $font-tracking-basic = 0.001em
+$font-tracking-large = 0.07em
 
 $color-black-soft = rgb(14,14,14)
 $color-white-soft = rgb(253,253,253)
@@ -196,7 +197,7 @@ img
     font-size: 1.7em
     text-align: center
     line-height: $font-leading-basic
-  p 
+  p
     max-width: 900px;
     display: block
     margin: 0 auto 1em
@@ -215,6 +216,7 @@ img
 #news
   display: none
   padding: $margin-small 0
+  letter-spacing: $font-tracking-large
 
 .tweet
   text-align: center
@@ -296,19 +298,19 @@ img
   // NEWS
   #news
     padding: $margin-small 0
-    
+
   .tweet
     width: ( 2 * $col ) + $gutter
 
   // TYPE
 
-  $font-size-basic = 14px
+  $font-size-basic = 12px
   $font-leading-basic = 1.35em
 
   body
     font-size: $font-size-basic
     line-height: $font-leading-basic
-    
+
 @media screen and (max-width: 1150px)
 
   // LAYOUT
@@ -391,7 +393,7 @@ img
   // NEWS
   #news
     padding: $margin-basic 0
-    
+
   .tweet
     width: 100%
     margin-left: 0
@@ -400,13 +402,13 @@ img
 
   // TYPE
 
-  $font-size-basic = 13px
+  $font-size-basic = 11px
   $font-leading-basic = 1.35em
 
   body
     font-size: $font-size-basic
     line-height: $font-leading-basic
-  
+
 
 @media screen and (max-width: 630px)
 
@@ -449,7 +451,7 @@ img
 
   #news
     padding: $margin-mega 0
-    
+
   // TYPE
 
   $font-size-basic = 10px
@@ -459,9 +461,9 @@ img
     -webkit-font-smoothing: subpixel-antialiased
     font-size: $font-size-basic
     line-height: $font-leading-basic
-    
+
 @media screen and (max-width: 360px)
-  
+
   // TYPE
 
   $font-size-basic = 8px
@@ -471,5 +473,4 @@ img
     -webkit-font-smoothing: subpixel-antialiased
     font-size: $font-size-basic
     line-height: $font-leading-basic
-    
-  
+
