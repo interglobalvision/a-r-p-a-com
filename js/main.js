@@ -102,8 +102,8 @@ jQuery(document).ready(function () {
 
   $masonry.imagesLoaded( function() {
 	  $masonry.masonry({
-	    columnWidth: '.grid-sizer',
-	    gutterWidth: '.gutter-sizer',
+	    columnWidth: 1,
+	    gutter: 0,
 	    itemSelector: '.item',
       transitionDuration: 0
 	  });

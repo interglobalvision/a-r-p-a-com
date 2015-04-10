@@ -20,12 +20,6 @@ for col in 1..$cols
   .col{col}
     width: ( col * $col ) + ( ( col - 1 ) * $gutter )
 
-.grid-sizer
-  width: $col + $gutter
-
-.gutter-sizer
-  width: $gutter
-
 
 // VARIABLES
 
@@ -220,11 +214,17 @@ img
   display: none
   padding: $margin-small 0
   letter-spacing: $font-tracking-large
+  width: 90%
+  margin-left: 5%
+  box-sizing: content-box
 
 .tweet
   text-align: center
+  width: 20%
+  float: left
+  box-sizing: border-box
+  padding: 0 1em
   margin-bottom: 3em
-  width: ( 2 * $col ) + $gutter
 
 .tweet-meta
   margin-bottom: .7em
@@ -302,8 +302,6 @@ img
   #news
     padding: $margin-small 0
 
-  .tweet
-    width: ( 2 * $col ) + $gutter
 
   // TYPE
 
@@ -353,9 +351,10 @@ img
   // NEWS
   #news
     padding: $margin-small 0
-
+    
   .tweet
-    width: ( ($cols/2) * $col ) + ( ( ($cols/2) - 1 ) * $gutter )
+    width: 49.9%
+
 
 @media screen and (max-width: 850px)
 
@@ -399,9 +398,7 @@ img
 
   .tweet
     width: 100%
-    margin-left: 0
-    margin-right: 0
-    float: none
+
 
   // TYPE
 
@@ -454,6 +451,7 @@ img
 
   #news
     padding: $margin-mega 0
+
 
   // TYPE
 

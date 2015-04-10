@@ -78,9 +78,8 @@ wp_reset_postdata();
 
   <!-- news -->
   <section id="news">
-    <div class="container js-masonry">
-      <div class="grid-sizer"></div>
-      <div class="gutter-sizer"></div>
+    <div class="js-masonry">
+
 <?php
 require_once('lib/oauth/twitterauth.php');
 $connection = getConnectionWithAccessToken("188722649-uikbR3s3hmh9gzx2IGul9m41gZFAcwpPw1JavWY9", "UhanOS1qRVW9Xx894ZkfvHhAYS0E6HCJ0SkeH9Kpw");
@@ -92,7 +91,7 @@ if ($content) {
   foreach ($content as $tweet) {
     if ($i < 30) {
 
-      echo '<article class="col tweet item" id="tweet-' . $tweet->id_str . '">';
+      echo '<article class="tweet item" id="tweet-' . $tweet->id_str . '">';
 
       echo '<div class="tweet-meta"><a target="_blank" href="https://twitter.com/__ARPA__/status/' . $tweet->id_str . '">';
       $time = strtotime($tweet->created_at);
@@ -126,10 +125,10 @@ if ($content) {
     }
   }
 
-  echo '<article class="col col10 u-pointer" id="follow-us"><a href="https://twitter.com/intent/follow?original_referer=http%3A%2F%2Fa-r-p-a.com&amp;screen_name=__ARPA__" target="_blank">Follow us on Twitter</a></article>';
+  echo '<article class="col" id="follow-us"><a href="https://twitter.com/intent/follow?original_referer=http%3A%2F%2Fa-r-p-a.com&amp;screen_name=__ARPA__" target="_blank">Follow us on Twitter</a></article>';
 
 } else {
-  echo '<article class="col col5">Twitter failed to load :{</article>';
+  echo '<article class="col">Twitter failed to load :{</article>';
 }
 ?>
   <!-- end news -->

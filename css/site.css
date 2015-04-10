@@ -738,12 +738,6 @@ ul.u-inline-list li {
 .col10 {
   width: 1300px;
 }
-.grid-sizer {
-  width: 136px;
-}
-.gutter-sizer {
-  width: 60px;
-}
 body {
   font-family: 'arpa_schulbuchroman', helvetica, arial, sans-serif;
   font-size: 13px;
@@ -908,11 +902,17 @@ img {
   display: none;
   padding: 60px 0;
   letter-spacing: 0.07em;
+  width: 90%;
+  margin-left: 5%;
+  box-sizing: content-box;
 }
 .tweet {
   text-align: center;
+  width: 20%;
+  float: left;
+  box-sizing: border-box;
+  padding: 0 1em;
   margin-bottom: 3em;
-  width: 212px;
 }
 .tweet-meta {
   margin-bottom: 0.7em;
@@ -1005,9 +1005,6 @@ img {
   #news {
     padding: 50px 0;
   }
-  .tweet {
-    width: 180px;
-  }
   body {
     font-size: 12px;
     line-height: 1.35em;
@@ -1073,7 +1070,7 @@ img {
     padding: 34px 0;
   }
   .tweet {
-    width: 391px;
+    width: 49.9%;
   }
 }
 @media screen and (max-width: 850px) {
@@ -1137,9 +1134,6 @@ img {
   }
   .tweet {
     width: 100%;
-    margin-left: 0;
-    margin-right: 0;
-    float: none;
   }
   body {
     font-size: 11px;
