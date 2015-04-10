@@ -682,9 +682,16 @@ ul.u-inline-list li {
   content: "\f402";
 }
 @font-face {
-  font-family: 'SchulbuchNord';
-  src: url("fonts/SchulbuchNord-Normal-webfont.eot");
-  src: url("fonts/SchulbuchNord-Normal-webfont.eot?#iefix") format('embedded-opentype'), url("fonts/SchulbuchNord-Normal-webfont.woff2") format('woff2'), url("fonts/SchulbuchNord-Normal-webfont.woff") format('woff'), url("fonts/SchulbuchNord-Normal-webfont.ttf") format('truetype'), url("fonts/SchulbuchNord-Normal-webfont.svg#schulbuchnordregular") format('svg');
+  font-family: 'arpa_schulbuchbold';
+  src: url("arpaschulbuch-bold-webfont.eot");
+  src: url("arpaschulbuch-bold-webfont.eot?#iefix") format('embedded-opentype'), url("arpaschulbuch-bold-webfont.woff2") format('woff2'), url("arpaschulbuch-bold-webfont.woff") format('woff'), url("arpaschulbuch-bold-webfont.ttf") format('truetype'), url("arpaschulbuch-bold-webfont.svg#arpa_schulbuchbold") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'arpa_schulbuchroman';
+  src: url("arpaschulbuch-roman-webfont.eot");
+  src: url("arpaschulbuch-roman-webfont.eot?#iefix") format('embedded-opentype'), url("arpaschulbuch-roman-webfont.woff2") format('woff2'), url("arpaschulbuch-roman-webfont.woff") format('woff'), url("arpaschulbuch-roman-webfont.ttf") format('truetype'), url("arpaschulbuch-roman-webfont.svg#arpa_schulbuchroman") format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -738,8 +745,7 @@ ul.u-inline-list li {
   width: 60px;
 }
 body {
-  font-family: 'SchulbuchNord', helvetica, arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
+  font-family: 'arpa_schulbuchroman', helvetica, arial, sans-serif;
   font-size: 13px;
   line-height: 1.35em;
   letter-spacing: 0.001em;
@@ -765,6 +771,9 @@ p {
 }
 li {
   list-style: none;
+}
+strong {
+  font-family: 'arpa_schulbuchbold', helvetica, arial, sans-serif;
 }
 a,
 a:active,

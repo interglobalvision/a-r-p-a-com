@@ -48,11 +48,11 @@ $color-blue = #0000FF
 
 // TYPOGRAPHY
 
-$font-nord = 'SchulbuchNord'
+$font-reg = 'arpa_schulbuchroman', helvetica, arial, sans-serif
+$font-bold = 'arpa_schulbuchbold', helvetica, arial, sans-serif
 
 body
-  font-family: $font-nord, helvetica, arial, sans-serif
-  -webkit-font-smoothing: antialiased
+  font-family: $font-reg
   font-size: $font-size-basic
   line-height: $font-leading-basic
   letter-spacing: $font-tracking-basic
@@ -77,6 +77,9 @@ p
 
 li
   list-style: none
+  
+strong
+  font-family: $font-bold
 
 
 // LINKS
