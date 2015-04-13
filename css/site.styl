@@ -29,8 +29,13 @@ $margin-large = ($gutter*5)
 $margin-mega = ($gutter*8)
 $margin-tiny = ($gutter/2)
 
+$font-size-large = 26px
+$font-size-sub-heading = 17px
 $font-size-basic = 13px
+$font-size-small = 12px
+
 $font-leading-basic = 1.35em
+
 $font-tracking-basic = 0.001em
 $font-tracking-large = 0.07em
 
@@ -42,20 +47,30 @@ $color-blue = #0000FF
 
 // TYPOGRAPHY
 
-$font-reg = 'arpa_schulbuchroman', helvetica, arial, sans-serif
-$font-bold = 'arpa_schulbuchbold', helvetica, arial, sans-serif
+$font-reg = 'arpa_schulbuchroman_web', helvetica, arial, sans-serif
+$font-bold = 'arpa_schulbuchbold_web', helvetica, arial, sans-serif
 
 body
+  -webkit-font-smoothing: antialiased
   font-family: $font-reg
   font-size: $font-size-basic
   line-height: $font-leading-basic
   letter-spacing: $font-tracking-basic
 
+.font-large
+  font-size: $font-size-large
+  line-height: $font-leading-basic
+
+.font-small
+  font-size: $font-size-small
+  line-height: $font-leading-basic
+
 h1
   font-size: 3em
 
 h2
-  font-size: 1em
+  font-size: $font-size-sub-heading
+  line-height: $font-leading-basic
   font-weight: normal
   display: block
   text-align: center
@@ -71,8 +86,8 @@ p
 
 li
   list-style: none
-  
-strong
+
+strong, b, .font-bold
   font-family: $font-bold
 
 
@@ -155,7 +170,8 @@ img
 .nav
   position: fixed
   text-transform: uppercase
-  font-size: .9em
+  font-family: $font-bold
+  letter-spacing: $font-tracking-large = 0.07em
   z-index: 999
   a
     border: 0
@@ -189,15 +205,9 @@ img
 #home-container
   height: 100%
 
-#home
-  p, li
-    font-size: 1.7em
-    text-align: center
-    line-height: $font-leading-basic
-  p
-    max-width: 900px;
-    display: block
-    margin: 0 auto 1em
+#home-text
+  max-width: 900px
+  margin: 0 auto 1em
 
 #clients
   column-count: 2
@@ -227,8 +237,7 @@ img
   margin-bottom: 3em
 
 .tweet-meta
-  margin-bottom: .7em
-  font-size: .8em
+  margin-bottom: .3em
   a
     border-bottom: 0
     padding: 0
@@ -262,11 +271,12 @@ img
     top: 50%
 
 
-  // NORMA QUERIES
+  // NORMAL QUERIES
 
 @media screen and (max-width: ($col * $cols)+($gutter * $cols))
 
   // LAYOUT
+
   $col = 65px
   $gutter = 50px
   $margin-small = ($gutter)
@@ -300,23 +310,17 @@ img
     column-gap: $margin-small
     margin-bottom: $margin-tiny
 
+
   // NEWS
+
   #news
     padding: $margin-small 0
 
 
-  // TYPE
-
-  $font-size-basic = 12px
-  $font-leading-basic = 1.35em
-
-  body
-    font-size: $font-size-basic
-    line-height: $font-leading-basic
-
 @media screen and (max-width: 1150px)
 
   // LAYOUT
+
   $col = 51px
   $gutter = 34px
   $margin-small = ($gutter)
@@ -350,10 +354,12 @@ img
     column-gap: $margin-small
     margin-bottom: $margin-tiny
 
+
   // NEWS
+
   #news
     padding: $margin-small 0
-    
+
   .tweet
     width: 49.9%
 
@@ -361,6 +367,7 @@ img
 @media screen and (max-width: 850px)
 
   // LAYOUT
+
   $col = 33px
   $gutter = 30px
   $margin-small = ($gutter)
@@ -394,7 +401,9 @@ img
     column-gap: $margin-small
     margin-bottom: $margin-tiny
 
+
   // NEWS
+
   #news
     padding: $margin-basic 0
 
@@ -404,17 +413,31 @@ img
 
   // TYPE
 
+  $font-size-large = 20px
+  $font-size-sub-heading = 15px
   $font-size-basic = 11px
-  $font-leading-basic = 1.35em
+  $font-size-small = 10px
 
   body
     font-size: $font-size-basic
     line-height: $font-leading-basic
 
+  .font-large
+    font-size: $font-size-large
+    line-height: $font-leading-basic
+
+  .font-small
+    font-size: $font-size-small
+    line-height: $font-leading-basic
+
+  h2
+    font-size: $font-size-sub-heading
+    line-height: $font-leading-basic
 
 @media screen and (max-width: 630px)
 
   // LAYOUT
+
   $col = 19px
   $gutter = 10px
   $margin-small = ($gutter)
@@ -439,7 +462,7 @@ img
     width: $gutter
 
   h2
-    margin: $margin-tiny 0
+    margin: $margin-basic 0
 
   #main-content
     margin-top: $margin-large
@@ -457,23 +480,23 @@ img
 
   // TYPE
 
+  $font-size-large = 15px
+  $font-size-sub-heading = 12px
   $font-size-basic = 10px
-  $font-leading-basic = 1.35em
+  $font-size-small = 9px
 
   body
-    -webkit-font-smoothing: subpixel-antialiased
     font-size: $font-size-basic
     line-height: $font-leading-basic
 
-@media screen and (max-width: 360px)
-
-  // TYPE
-
-  $font-size-basic = 8px
-  $font-leading-basic = 1.35em
-
-  body
-    -webkit-font-smoothing: subpixel-antialiased
-    font-size: $font-size-basic
+  .font-large
+    font-size: $font-size-large
     line-height: $font-leading-basic
 
+  .font-small
+    font-size: $font-size-small
+    line-height: $font-leading-basic
+
+  h2
+    font-size: $font-size-sub-heading
+    line-height: $font-leading-basic

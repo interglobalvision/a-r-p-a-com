@@ -32,7 +32,9 @@ get_header();
       <div class="u-held">
         <div class="col col10">
           <h2><span>Information</span></h2>
-          <?php the_content(); ?>
+          <div id="home-text" class="font-large u-align-center">
+            <?php the_content(); ?>
+          </div>
 <?php
 $args = array (
   'post_type' => 'clients',
@@ -44,7 +46,7 @@ $clients = get_posts( $args );
 if ( $clients ) {
 ?>
       <h2><span>Clients</span></h2>
-        <ul id="clients">
+        <ul id="clients" class="font-large u-align-center">
 <?php
 foreach ($clients as $post) {
   $name = get_the_title();
@@ -93,18 +95,18 @@ if ($content) {
 
       echo '<article class="tweet item" id="tweet-' . $tweet->id_str . '">';
 
-      echo '<div class="tweet-meta"><a target="_blank" href="https://twitter.com/__ARPA__/status/' . $tweet->id_str . '">';
+      echo '<div class="tweet-meta font-small"><a target="_blank" href="https://twitter.com/__ARPA__/status/' . $tweet->id_str . '">';
       $time = strtotime($tweet->created_at);
       echo '<span class="date">' . date('j l Y' , $time) . '</span>';
       echo '<span class="time"> - ' . date('g:i' , $time) . '</span>';
       echo '</a></div>';
 
       $filtered = preg_replace('#\bhttps?://[^\s()<>]+(?:\([\w\d]+\)|([^[:punct:]\s]|/))#', '', $tweet->text);
-      echo link_it($filtered);
+      echo '<div class="font-bold">' . link_it($filtered) . '</div>';
 
       if (!empty($tweet->entities->urls)) {
         foreach ($tweet->entities->urls as $url) {
-          echo '<a class="tweet-link" target="_blank" href="' . $url->expanded_url . '">' . $url->display_url . '</a> ';
+          echo '<a class="tweet-link font-bold" target="_blank" href="' . $url->expanded_url . '">' . $url->display_url . '</a> ';
         }
       }
 

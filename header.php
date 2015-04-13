@@ -41,19 +41,19 @@
   $maps_url = 'https://www.google.com.mx/maps/place/'.$address_replaced;
   $email = $info_meta['_igv_email'][0];
 ?>
-  <nav id="nav-top-left" class="nav">
+  <nav id="nav-top-left" class="nav font-small">
     <?php if($address) { echo '<a href="'.$maps_url.'" target="_blank">'.$address.'</a>'; } ?>
   </nav>
 
-  <nav id="nav-top-right" class="nav">
+  <nav id="nav-top-right" class="nav font-small">
     <?php if($email) { echo '<a href="mailto:'.$email.'" target="_blank">'.$email.'</a>'; } ?>
   </nav>
 
-  <nav id="nav-bottom-left" class="nav">
+  <nav id="nav-bottom-left" class="nav font-small">
     <a class="back-arrow u-hidden" href="<?php home_url(); ?>#!/home">↗</a>
   </nav>
 
-  <nav id="nav-bottom-right" class="nav">
+  <nav id="nav-bottom-right" class="nav font-small">
     <a class="js-news-link" href="#!/news">News</a>
   </nav>
 
