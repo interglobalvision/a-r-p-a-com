@@ -1,5 +1,5 @@
-/* jshint browser: true, devel: true, indent: 2 */
-/* global $, jQuery, document */
+/* jshint browser: true, devel: true, indent: 2, curly: true, eqeqeq: true, futurehostile: true, latedef: true, undef: true, unused: true */
+/* global $, jQuery, document, Modernizr */
 
 // DEV FUNCTION REMOVE FOR PROD
 
@@ -19,10 +19,15 @@ var $masonry = $('.js-masonry'),
 
   $splash = $('#splash'),
   $home = $('#home'),
-  $mainContent = $('#main-content');
+  $mainContent = $('#main-content'),
+
   $news = $('#news'),
-  $backArrow = $('.back-arrow');
-  $newsLink = $('.js-news-link');
+  $backArrow = $('.back-arrow'),
+  $newsLink = $('.js-news-link'),
+
+  $noonVideo = $('#noon-video'),
+
+  timeout;
 
 // ROUTER
 function router( hash ) {
@@ -66,13 +71,31 @@ function setWindowSized() {
   });
 }
 
+function centerVideo() {
+  var videoWidth = $noonVideo.width();
+  var halfWindowWidth = ($(window).width() / 2);
+
+  l(videoWidth);
+  l(halfWindowWidth);
+
+  var marginLeft = ((videoWidth - halfWindowWidth) / 2);
+
+  l(marginLeft);
+
+  $noonVideo.css({
+    'margin-left': '-' + marginLeft + 'px'
+  });
+}
+
 jQuery(document).ready(function () {
   'use strict';
 
   // LAYOUT
   setWindowSized();
+  centerVideo();
   $(window).resize(function() {
     setWindowSized();
+    centerVideo();
   });
 
   // ROUTER: on load
@@ -86,8 +109,7 @@ jQuery(document).ready(function () {
   };
 
   // SCROLL EVENTS
-  $(window).scroll(function(e) {
-
+  $(window).scroll(function() {
     // when you scroll back to top of the page set hash as home
     if ($(window).scrollTop() === 0) {
       $mainContent.hide();
@@ -98,6 +120,7 @@ jQuery(document).ready(function () {
   // CLICK EVENTS
   $('#splash-arpa').on('click', function() {
   	$splash.remove();
+  	window.location.hash = '!/home';
   });
 
   $masonry.imagesLoaded( function() {

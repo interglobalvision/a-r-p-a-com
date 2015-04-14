@@ -11,15 +11,31 @@ get_header();
     </div>
   </div>
   <a href="http://n-o-o-n.co.uk">
-    <div id="splash-noon" class="u-holder u-align-center"
+    <div id="splash-noon" class="u-align-center"
 <?php
-  $noonImage = json_decode(file_get_contents('http://n-o-o-n.co.uk/data/'));
-  if ($noonImage->noon) {
-    echo 'style="background-image: url(' . $noonImage->noon . ')"';
+  $noon = json_decode(file_get_contents('http://n-o-o-n.co.uk/data/'));
+  if ($noon) {
+    echo 'style="background-image: url(' . $noon->noon . ')"';
   }
 ?>>
-      <div class="u-held">
-        <?php echo file_get_contents(get_bloginfo('stylesheet_directory') . '/img/optimized/noon.svg'); ?>
+<?php
+  if ($noon) {
+?>
+    <div id="noon-video-container">
+      <video autoplay loop muted id="noon-video">
+  			<source id="webm" src="<?php echo $noon->webm; ?>" type="video/webm; codecs=vp8,vorbis" />
+  		  <source id="mp4" src="<?php echo $noon->mp4; ?>" type="video/mp4" />
+  		</video>
+    </div>
+<?php
+  }
+?>
+      <div id="noon-z-index-fix">
+        <div class="u-holder">
+          <div class="u-held">
+            <?php echo file_get_contents(get_bloginfo('stylesheet_directory') . '/img/optimized/noon.svg'); ?>
+          </div>
+        </div>
       </div>
     </div>
   </a>
