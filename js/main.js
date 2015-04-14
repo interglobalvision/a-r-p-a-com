@@ -69,6 +69,8 @@ function setWindowSized() {
 jQuery(document).ready(function () {
   'use strict';
 
+  l('deploy check');
+
   // LAYOUT
   setWindowSized();
   $(window).resize(function() {
