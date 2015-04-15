@@ -76,7 +76,8 @@ function initVideo() {
 
   videoElement.addEventListener('play', function() {
     $(videoElement).css({
-      'opacity': 1
+      'opacity': 1,
+      'display': 'block'
     });
   });
 
@@ -90,11 +91,11 @@ function setWindowSized() {
     var windowHeight = $(window).height();
     if ($this.height() >= windowHeight) {
       $this.css({
-      'height': 'auto'
+        'height': 'auto'
       });
     } else {
       $this.css({
-      'height': $(window).height()
+        'height': $(window).height()
       });
     }
   });

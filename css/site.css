@@ -907,6 +907,7 @@ img {
   opacity: 0;
   -webkit-transition: opacity 1s;
           transition: opacity 1s;
+  display: none;
 }
 .nav {
   position: fixed;
