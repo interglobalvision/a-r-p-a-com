@@ -41,8 +41,10 @@ function router( hash ) {
       $news.show();
       $masonry.masonry();
       $news.ScrollTo();
+
       $backArrow.removeClass('u-hidden');
       $newsLink.addClass('u-hidden');
+
       $('meta[property="og:title"]').attr('content','ARPA - News');
       $('title').html('ARPA - News');
 
@@ -50,8 +52,10 @@ function router( hash ) {
 
       $splash.remove();
       $home.ScrollTo();
+
       $backArrow.addClass('u-hidden');
       $newsLink.removeClass('u-hidden');
+
       $('meta[property="og:title"]').attr('content','ARPA');
       $('title').html('ARPA');
 
