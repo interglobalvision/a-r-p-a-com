@@ -10,7 +10,6 @@ get_header();
       <?php echo file_get_contents(get_bloginfo('stylesheet_directory') . '/img/optimized/arpa.svg'); ?>
     </div>
   </div>
-  <a href="http://n-o-o-n.co.uk">
     <div id="splash-noon" class="u-align-center"
 <?php
   $noon = json_decode(file_get_contents('http://n-o-o-n.co.uk/data/'));
@@ -21,24 +20,26 @@ get_header();
 <?php
   if ($noon) {
 ?>
-    <div id="noon-video-container">
-      <video autoplay loop muted id="noon-video">
-  			<source id="webm" src="<?php echo $noon->webm; ?>" type="video/webm; codecs=vp8,vorbis" />
-  		  <source id="mp4" src="<?php echo $noon->mp4; ?>" type="video/mp4" />
-  		</video>
-    </div>
+  <div id="noon-video-container">
+    <video autoplay loop muted id="noon-video">
+			<source id="webm" src="<?php echo $noon->webm; ?>" type="video/webm; codecs=vp8,vorbis" />
+		  <source id="mp4" src="<?php echo $noon->mp4; ?>" type="video/mp4" />
+		</video>
+  </div>
 <?php
-  }
+}
 ?>
-      <div id="noon-z-index-fix">
+
+    <div id="noon-z-index-fix">
+      <a href="http://n-o-o-n.co.uk">
         <div class="u-holder">
           <div class="u-held">
             <?php echo file_get_contents(get_bloginfo('stylesheet_directory') . '/img/optimized/noon.svg'); ?>
           </div>
         </div>
-      </div>
+      </a>
     </div>
-  </a>
+  </div>
 </section>
 
 <!-- main home content -->

@@ -66,22 +66,25 @@ function router( hash ) {
 
 // LAYOUT FIXES
 function setWindowSized() {
-  $window.css({
-    'min-height': $(window).height()
+  $window.each(function() {
+    var $this = $(this);
+    var windowHeight = $(window).height();
+    if ($this.height() >= windowHeight) {
+      $this.css({
+      'height': 'auto'
+      });
+    } else {
+      $this.css({
+      'height': $(window).height()
+      });
+    }
   });
 }
 
 function centerVideo() {
   var videoWidth = $noonVideo.width();
   var halfWindowWidth = ($(window).width() / 2);
-
-  l(videoWidth);
-  l(halfWindowWidth);
-
   var marginLeft = ((videoWidth - halfWindowWidth) / 2);
-
-  l(marginLeft);
-
   $noonVideo.css({
     'margin-left': '-' + marginLeft + 'px'
   });
