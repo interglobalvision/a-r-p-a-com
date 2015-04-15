@@ -89,7 +89,7 @@ function setWindowSized() {
   $window.each(function() {
     var $this = $(this);
     var windowHeight = $(window).height();
-    if ($this.height() >= windowHeight) {
+    if ($this.height() > windowHeight) {
       $this.css({
         'height': 'auto'
       });
