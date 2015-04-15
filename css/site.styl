@@ -49,6 +49,7 @@ $font-leading-basic = 1.35em
 
 $font-tracking-basic = 0.001em
 $font-tracking-large = 0.07em
+$font-tracking-medium = 0.03em
 
 $color-black-soft = rgb(14,14,14)
 $color-white-soft = rgb(253,253,253)
@@ -236,6 +237,9 @@ img
 
 
 // HOME
+
+#home
+  display: none
 
 #home-container
   min-height: 100%
@@ -432,7 +436,6 @@ img
     column-gap: $margin-small
     margin-bottom: $margin-tiny
 
-
   // NEWS
 
   #news
@@ -499,14 +502,14 @@ img
     margin-top: $margin-large
 
   #home-container
-    padding-top: $margin-tiny
+    padding-top: $margin-small+$margin-tiny
 
   #clients
     column-gap: $margin-small
-    margin-bottom: $margin-tiny
+    margin-bottom: $margin-small
 
   #news
-    padding: $margin-mega 0
+    padding: $margin-large 0
 
   .tweet
     width: ( 100% / 1 )
@@ -533,3 +536,6 @@ img
   h2
     font-size: $font-size-sub-heading
     line-height: $font-leading-basic
+
+  .nav
+    letter-spacing: $font-tracking-medium

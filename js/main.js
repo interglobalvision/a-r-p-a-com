@@ -37,6 +37,7 @@ function router( hash ) {
     if ( hash === 'news' ) {
 
       $splash.remove();
+      $home.show();
       $mainContent.show();
       $news.show();
       $masonry.masonry();
@@ -51,7 +52,7 @@ function router( hash ) {
     } else if ( hash === 'home' ) {
 
       $splash.remove();
-      $home.ScrollTo();
+      $home.show().ScrollTo();
 
       $backArrow.addClass('u-hidden');
       $newsLink.removeClass('u-hidden');
