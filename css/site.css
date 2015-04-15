@@ -904,6 +904,9 @@ img {
 }
 #noon-video {
   height: 100%;
+  opacity: 0;
+  -webkit-transition: opacity 1s;
+          transition: opacity 1s;
 }
 .nav {
   position: fixed;

@@ -68,6 +68,20 @@ function router( hash ) {
 
 }
 
+// VIDEO
+
+function initVideo() {
+  var videoElement = document.getElementById('noon-video');
+
+  videoElement.addEventListener('play', function() {
+    $(videoElement).css({
+      'opacity': 1
+    });
+  });
+
+  videoElement.load();
+}
+
 // LAYOUT FIXES
 function setWindowSized() {
   $window.each(function() {
@@ -96,6 +110,9 @@ function centerVideo() {
 
 jQuery(document).ready(function () {
   'use strict';
+
+  // VIDEO
+  initVideo();
 
   // LAYOUT
   setWindowSized();
