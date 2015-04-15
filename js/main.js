@@ -128,10 +128,9 @@ jQuery(document).ready(function () {
 
   $masonry.imagesLoaded( function() {
 	  $masonry.masonry({
-	    columnWidth: 1,
-	    gutter: 0,
-	    itemSelector: '.item',
-      transitionDuration: 0
+	    itemSelector: '.js-masonry-item',
+      transitionDuration: 0,
+      percentPosition: true
 	  });
   });
 

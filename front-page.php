@@ -110,7 +110,7 @@ if ($content) {
   foreach ($content as $tweet) {
     if ($i < 30) {
 
-      echo '<article class="tweet item" id="tweet-' . $tweet->id_str . '">';
+      echo '<article class="percent-col into-5 tweet item js-masonry-item" id="tweet-' . $tweet->id_str . '">';
 
       echo '<div class="tweet-meta font-small"><a target="_blank" href="https://twitter.com/__ARPA__/status/' . $tweet->id_str . '">';
       $time = strtotime($tweet->created_at);

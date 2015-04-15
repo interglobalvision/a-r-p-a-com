@@ -738,6 +738,40 @@ ul.u-inline-list li {
 .col10 {
   width: 1300px;
 }
+.percent-col {
+  float: left;
+  box-sizing: border-box;
+}
+.into-1 {
+  width: 100%;
+}
+.into-2 {
+  width: 50%;
+}
+.into-3 {
+  width: 33.333333333333336%;
+}
+.into-4 {
+  width: 25%;
+}
+.into-5 {
+  width: 20%;
+}
+.into-6 {
+  width: 16.666666666666668%;
+}
+.into-7 {
+  width: 14.285714285714286%;
+}
+.into-8 {
+  width: 12.5%;
+}
+.into-9 {
+  width: 11.11111111111111%;
+}
+.into-10 {
+  width: 10%;
+}
 body {
   -webkit-font-smoothing: antialiased;
   font-family: 'arpa_schulbuchroman_web', helvetica, arial, sans-serif;
@@ -929,15 +963,12 @@ img {
   display: none;
   padding: 60px 0;
   letter-spacing: 0.07em;
-  width: 90%;
-  margin-left: 5%;
-  box-sizing: content-box;
+  width: 92%;
+  max-width: 2980px;
+  margin: 0 auto;
 }
 .tweet {
   text-align: center;
-  width: 20%;
-  float: left;
-  box-sizing: border-box;
   padding: 0 1em;
   margin-bottom: 3em;
 }
@@ -1094,7 +1125,7 @@ img {
     padding: 34px 0;
   }
   .tweet {
-    width: 49.9%;
+    width: 33.333333333333336%;
   }
 }
 @media screen and (max-width: 850px) {
@@ -1157,7 +1188,7 @@ img {
     padding: 60px 0;
   }
   .tweet {
-    width: 100%;
+    width: 50%;
   }
   body {
     font-size: 11px;
@@ -1237,6 +1268,9 @@ img {
   }
   #news {
     padding: 80px 0;
+  }
+  .tweet {
+    width: 100%;
   }
   body {
     font-size: 10px;
