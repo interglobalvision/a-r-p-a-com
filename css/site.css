@@ -942,10 +942,9 @@ img {
 }
 #home-container {
   min-height: 100%;
-}
-#home-text {
-  max-width: 900px;
-  margin: 0 auto 1em;
+  max-width: 1100px;
+  width: 80%;
+  margin: 0 auto;
 }
 #clients {
   -webkit-column-count: 2;

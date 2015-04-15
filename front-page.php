@@ -44,10 +44,9 @@ get_header();
 
 <!-- main home content -->
 <section id="home">
-  <div id="home-container" class="container u-cf">
+  <div id="home-container" class="u-cf">
     <div class="u-holder js-window">
       <div class="u-held">
-        <div class="col col10">
           <h2><span>Information</span></h2>
           <div id="home-text" class="font-large u-align-center">
             <?php the_content(); ?>
@@ -62,15 +61,15 @@ $args = array (
 $clients = get_posts( $args );
 if ( $clients ) {
 ?>
-      <h2><span>Clients</span></h2>
-        <ul id="clients" class="font-large u-align-center">
+          <h2><span>Clients</span></h2>
+          <ul id="clients" class="font-large u-align-center">
 <?php
 foreach ($clients as $post) {
   $name = get_the_title();
   echo '<li><a href="#!/'.$post->post_name.'">'.$name.'</a></li>';
 }
 ?>
-        </ul>
+          </ul>
 <?php
 } else {
 // no posts found
@@ -81,7 +80,6 @@ wp_reset_postdata();
 ?>
 
     <!-- end posts -->
-        </div>
       </div>
     </div>
   </div>
