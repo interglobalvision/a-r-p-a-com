@@ -1,5 +1,5 @@
 /* jshint browser: true, devel: true, indent: 2, curly: true, eqeqeq: true, futurehostile: true, latedef: true, undef: true, unused: true */
-/* global $, jQuery, document, Modernizr */
+/* global $, jQuery, document, Modernizr, WP */
 
 // DEV FUNCTION REMOVE FOR PROD
 
@@ -36,14 +36,17 @@ function router( hash ) {
 
     if ( hash === 'news' ) {
 
-      $splash.remove();
+      $splash.hide();
+
       $home.show();
       $mainContent.show();
       $news.show();
+
       $masonry.masonry();
+
       $news.ScrollTo();
 
-      $backArrow.removeClass('u-hidden');
+      $backArrow.removeClass('u-hidden').attr('href', WP.home);
       $newsLink.addClass('u-hidden');
 
       $('meta[property="og:title"]').attr('content','ARPA - News');
@@ -51,10 +54,10 @@ function router( hash ) {
 
     } else if ( hash === 'home' ) {
 
-      $splash.remove();
+      $splash.hide();
       $home.show().ScrollTo();
 
-      $backArrow.addClass('u-hidden');
+      $backArrow.removeClass('u-hidden').attr('href', WP.splash);
       $newsLink.removeClass('u-hidden');
 
       $('meta[property="og:title"]').attr('content','ARPA');
@@ -64,6 +67,17 @@ function router( hash ) {
         $mainContent.hide();
         $news.hide();
       }, scrollAnimationDuration);
+
+    } else if ( hash === 'splash' ) {
+
+      $splash.show();
+      $home.hide();
+
+      $backArrow.addClass('u-hidden');
+      $newsLink.addClass('u-hidden');
+
+      $('meta[property="og:title"]').attr('content','ARPA');
+      $('title').html('ARPA');
 
     }
 
@@ -145,7 +159,6 @@ jQuery(document).ready(function () {
 
   // CLICK EVENTS
   $('#splash-arpa').on('click', function() {
-  	$splash.remove();
   	window.location.hash = '!/home';
   });
 

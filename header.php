@@ -43,11 +43,11 @@
   $email = $info_meta['_igv_email'][0];
 ?>
   <nav id="nav-top-left" class="nav font-small">
-    <?php if($address) { echo '<a href="'.$maps_url.'" target="_blank">'.$address.'</a>'; } ?>
+    <?php if($address) { echo '<a href="' . $maps_url . '" target="_blank">' . $address . '</a>'; } ?>
   </nav>
 
   <nav id="nav-top-right" class="nav font-small">
-    <?php if($email) { echo '<a href="mailto:'.$email.'" target="_blank">'.$email.'</a>'; } ?>
+    <?php if($email) { echo '<a href="mailto:' . $email . '" target="_blank">'.$email . '</a>'; } ?>
   </nav>
 
   <nav id="nav-bottom-left" class="nav font-small">
