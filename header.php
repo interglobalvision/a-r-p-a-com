@@ -51,7 +51,9 @@
   </nav>
 
   <nav id="nav-bottom-left" class="nav font-small">
-    <a class="back-arrow u-hidden" href="<?php home_url(); ?>#!/home">↗</a>
+    <a class="back-arrow u-hidden" href="<?php home_url(); ?>#!/home">
+      <?php echo url_get_contents(get_bloginfo('stylesheet_directory') . '/img/arpa-arrow.svg'); ?>
+    </a>
   </nav>
 
   <nav id="nav-bottom-right" class="nav font-small">

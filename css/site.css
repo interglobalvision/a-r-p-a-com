@@ -793,6 +793,7 @@ h1 {
 h2 {
   font-size: 17px;
   line-height: 1.35em;
+  letter-spacing: 0.03em;
   font-weight: normal;
   display: block;
   text-align: center;
@@ -938,13 +939,6 @@ img {
   left: 2%;
   padding-bottom: 1em;
 }
-.back-arrow {
-  font-size: 2em;
-  -webkit-transform: rotate(-45deg);
-      -ms-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-  display: block;
-}
 #home {
   display: none;
 }
@@ -968,7 +962,7 @@ img {
 }
 #news {
   display: none;
-  padding: 60px 0;
+  padding: 90px 0;
   letter-spacing: 0.07em;
   width: 92%;
   max-width: 2980px;
@@ -1050,7 +1044,7 @@ img {
     margin-bottom: 27.5px;
   }
   #news {
-    padding: 55px 0;
+    padding: 82.5px 0;
   }
   body {
     font-size: 17px;
@@ -1123,7 +1117,7 @@ img {
     margin-bottom: 30px;
   }
   #news {
-    padding: 60px 0;
+    padding: 90px 0;
   }
   body {
     font-size: 20px;
@@ -1215,7 +1209,7 @@ img {
     margin-bottom: 25px;
   }
   #news {
-    padding: 50px 0;
+    padding: 75px 0;
   }
 }
 @media screen and (max-width: 1150px) {
@@ -1275,7 +1269,7 @@ img {
     margin-bottom: 17px;
   }
   #news {
-    padding: 34px 0;
+    padding: 51px 0;
   }
   .tweet {
     width: 33.333333333333336%;

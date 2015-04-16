@@ -34,7 +34,7 @@ get_header();
       <a href="http://n-o-o-n.co.uk">
         <div class="u-holder">
           <div class="u-held">
-            <?php echo file_get_contents(get_bloginfo('stylesheet_directory') . '/img/optimized/noon.svg'); ?>
+            <?php echo url_get_contents(get_bloginfo('stylesheet_directory') . '/img/optimized/noon.svg'); ?>
           </div>
         </div>
       </a>
@@ -117,11 +117,11 @@ if ($content) {
       echo '</a></div>';
 
       $filtered = preg_replace('#\bhttps?://[^\s()<>]+(?:\([\w\d]+\)|([^[:punct:]\s]|/))#', '', $tweet->text);
-      echo '<div class="font-bold">' . link_it($filtered) . '</div>';
+      echo '<div>' . link_it($filtered) . '</div>';
 
       if (!empty($tweet->entities->urls)) {
         foreach ($tweet->entities->urls as $url) {
-          echo '<a class="tweet-link font-bold" target="_blank" href="' . $url->expanded_url . '">' . $url->display_url . '</a> ';
+          echo '<a class="tweet-link" target="_blank" href="' . $url->expanded_url . '">' . $url->display_url . '</a> ';
         }
       }
 

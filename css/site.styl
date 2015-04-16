@@ -88,6 +88,7 @@ h1
 h2
   font-size: $font-size-sub-heading
   line-height: $font-leading-basic
+  letter-spacing: $font-tracking-medium
   font-weight: normal
   display: block
   text-align: center
@@ -235,11 +236,6 @@ img
   left: 2%
   padding-bottom: 1em
 
-.back-arrow
-  font-size: 2em
-  transform: rotate(-45deg)
-  display: block
-
 
 // HOME
 
@@ -265,7 +261,7 @@ img
 
 #news
   display: none
-  padding: $margin-small 0
+  padding: ($margin-small + $margin-tiny) 0
   letter-spacing: $font-tracking-large
   width: 92%
   max-width: 2980px
@@ -332,7 +328,7 @@ img
     margin-bottom: $margin-tiny
 
   #news
-    padding: $margin-small 0
+    padding: ($margin-small + $margin-tiny) 0
 
   // TYPE
 
@@ -392,7 +388,7 @@ img
     margin-bottom: $margin-tiny
 
   #news
-    padding: $margin-small 0
+    padding: ($margin-small + $margin-tiny) 0
 
   // TYPE
 
@@ -473,11 +469,8 @@ img
     column-gap: $margin-small
     margin-bottom: $margin-tiny
 
-
-  // NEWS
-
   #news
-    padding: $margin-small 0
+    padding: ($margin-small + $margin-tiny) 0
 
 
 @media screen and (max-width: 1150px)
@@ -517,11 +510,8 @@ img
     column-gap: $margin-small
     margin-bottom: $margin-tiny
 
-
-  // NEWS
-
   #news
-    padding: $margin-small 0
+    padding: ($margin-small + $margin-tiny) 0
 
   .tweet
     width: ( 100% / 3 )
@@ -563,8 +553,6 @@ img
   #clients
     column-gap: $margin-small
     margin-bottom: $margin-tiny
-
-  // NEWS
 
   #news
     padding: $margin-basic 0
