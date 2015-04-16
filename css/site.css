@@ -774,6 +774,7 @@ ul.u-inline-list li {
 }
 body {
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   font-family: 'arpa_schulbuchroman_web', helvetica, arial, sans-serif;
   font-size: 13px;
   line-height: 1.35em;
