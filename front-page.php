@@ -13,8 +13,11 @@ get_header();
     <div id="splash-noon" class="u-align-center"
 <?php
   $noon = json_decode(file_get_contents('http://n-o-o-n.co.uk/data/'));
-  if ($noon) {
-    echo 'style="background-image: url(' . $noon->noon . ')"';
+  $videosLength = count($noon) - 1;
+  $randomVideo = rand(0, $videosLength);
+
+    if ($noon) {
+    echo 'style="background-image: url(' . $noon[$randomVideo]->noon . ')"';
   }
 ?>>
 <?php
@@ -22,8 +25,8 @@ get_header();
 ?>
   <div id="noon-video-container">
     <video autoplay loop muted id="noon-video">
-			<source id="webm" src="<?php echo $noon->webm; ?>" type="video/webm; codecs=vp8,vorbis" />
-		  <source id="mp4" src="<?php echo $noon->mp4; ?>" type="video/mp4" />
+			<source id="webm" src="<?php echo $noon[$randomVideo]->webm; ?>" type="video/webm; codecs=vp8,vorbis" />
+		  <source id="mp4" src="<?php echo $noon[$randomVideo]->mp4; ?>" type="video/mp4" />
 		</video>
   </div>
 <?php
