@@ -1433,3 +1433,13 @@ img {
     letter-spacing: 0.03em;
   }
 }
+@media screen and (max-width: 360px) {
+  .font-large {
+    font-size: 13px;
+    line-height: 1.35em;
+  }
+  h2 {
+    font-size: 11px;
+    line-height: 1.35em;
+  }
+}
