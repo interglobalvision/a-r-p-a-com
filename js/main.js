@@ -1,13 +1,6 @@
 /* jshint browser: true, devel: true, indent: 2, curly: true, eqeqeq: true, futurehostile: true, latedef: true, undef: true, unused: true */
 /* global $, jQuery, document, Modernizr, WP */
 
-// DEV FUNCTION REMOVE FOR PROD
-
-function l(data) {
-  'use strict';
-  console.log(data);
-}
-
 // VARIABLES
 
 var scrollAnimationDuration = 400;
@@ -151,7 +144,7 @@ jQuery(document).ready(function () {
   // SCROLL EVENTS
   $(window).scroll(function() {
     // when you scroll back to top of the page set hash as home
-    if ($(window).scrollTop() === 0) {
+    if ($(window).scrollTop() === 0 && window.location.hash !== '#!/splash') {
       $mainContent.hide();
       window.location.hash = '!/home';
     }
