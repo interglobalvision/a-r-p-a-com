@@ -145,7 +145,7 @@ if ($content) {
     }
   }
 
-  echo '<article id="follow-us"><a href="https://twitter.com/intent/follow?original_referer=http%3A%2F%2Fa-r-p-a.com&amp;screen_name=__ARPA__" target="_blank">Follow us on Twitter</a></article>';
+/*   echo '<article id="follow-us"><a href="https://twitter.com/intent/follow?original_referer=http%3A%2F%2Fa-r-p-a.com&amp;screen_name=__ARPA__" target="_blank">Follow us on Twitter</a></article>'; */
 
 } else {
   echo '<article>Twitter failed to load :{</article>';
