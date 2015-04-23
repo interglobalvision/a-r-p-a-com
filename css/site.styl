@@ -47,6 +47,8 @@ $font-size-sub-heading = 17px
 $font-size-basic = 13px
 //.461538462
 $font-size-small = 12px
+// .346153846
+$font-size-tiny = 9px
 
 $font-leading-basic = 1.35em
 
@@ -81,6 +83,10 @@ body
 
 .font-small
   font-size: $font-size-small
+  line-height: $font-leading-basic
+
+.font-tiny
+  font-size: $font-size-tiny
   line-height: $font-leading-basic
 
 h1
@@ -262,7 +268,7 @@ img
 
 #news
   display: none
-  padding: ($margin-small + $margin-tiny) 0
+  padding: ($margin-small + ($margin-tiny / 2)) 0
   letter-spacing: $font-tracking-large
   width: 92%
   max-width: 2980px
@@ -329,7 +335,7 @@ img
     margin-bottom: $margin-tiny
 
   #news
-    padding: ($margin-small + $margin-tiny) 0
+    padding: ($margin-small + ($margin-tiny / 2)) 0
 
   // TYPE
 
@@ -337,6 +343,7 @@ img
   $font-size-sub-heading = 22px
   $font-size-basic = 17px
   $font-size-small = 15px
+  $font-size-tiny = 12px
 
   body
     font-size: $font-size-basic
@@ -348,6 +355,10 @@ img
 
   .font-small
     font-size: $font-size-small
+    line-height: $font-leading-basic
+
+  .font-tiny
+    font-size: $font-size-tiny
     line-height: $font-leading-basic
 
   h2
@@ -389,7 +400,7 @@ img
     margin-bottom: $margin-tiny
 
   #news
-    padding: ($margin-small + $margin-tiny) 0
+    padding: ($margin-small + ($margin-tiny / 2)) 0
 
   // TYPE
 
@@ -397,6 +408,7 @@ img
   $font-size-sub-heading = 28px
   $font-size-basic = 20px
   $font-size-small = 18px
+  $font-size-tiny = 14px
 
   body
     font-size: $font-size-basic
@@ -408,6 +420,10 @@ img
 
   .font-small
     font-size: $font-size-small
+    line-height: $font-leading-basic
+
+  .font-tiny
+    font-size: $font-size-tiny
     line-height: $font-leading-basic
 
   h2
@@ -471,7 +487,7 @@ img
     margin-bottom: $margin-tiny
 
   #news
-    padding: ($margin-small + $margin-tiny) 0
+    padding: ($margin-small + ($margin-tiny / 2)) 0
 
 
 @media screen and (max-width: 1150px)
@@ -512,7 +528,7 @@ img
     margin-bottom: $margin-tiny
 
   #news
-    padding: ($margin-small + $margin-tiny) 0
+    padding: ($margin-small + ($margin-tiny / 2)) 0
 
   .tweet
     width: ( 100% / 3 )
@@ -556,7 +572,7 @@ img
     margin-bottom: $margin-tiny
 
   #news
-    padding: $margin-basic 0
+    padding: ($margin-small + ($margin-tiny / 2)) 0
 
   .tweet
     width: ( 100% / 2 )
@@ -568,6 +584,7 @@ img
   $font-size-sub-heading = 15px
   $font-size-basic = 11px
   $font-size-small = 10px
+  $font-size-tiny = 8px
 
   body
     font-size: $font-size-basic
@@ -579,6 +596,10 @@ img
 
   .font-small
     font-size: $font-size-small
+    line-height: $font-leading-basic
+
+  .font-tiny
+    font-size: $font-size-tiny
     line-height: $font-leading-basic
 
   h2
@@ -626,7 +647,7 @@ img
     margin-bottom: $margin-small
 
   #news
-    padding: $margin-large 0
+    padding: ($margin-large) 0
 
   .tweet
     width: ( 100% / 1 )

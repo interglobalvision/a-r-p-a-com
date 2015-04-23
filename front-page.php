@@ -113,7 +113,7 @@ if ($content) {
 
       echo '<article class="percent-col into-5 tweet item js-masonry-item" id="tweet-' . $tweet->id_str . '">';
 
-      echo '<div class="tweet-meta font-small"><a target="_blank" href="https://twitter.com/__ARPA__/status/' . $tweet->id_str . '">';
+      echo '<div class="tweet-meta font-tiny"><a target="_blank" href="https://twitter.com/__ARPA__/status/' . $tweet->id_str . '">';
       $time = strtotime($tweet->created_at);
       echo '<span class="date">' . date('j l Y' , $time) . '</span>';
       echo '<span class="time"> - ' . date('g:i' , $time) . '</span>';

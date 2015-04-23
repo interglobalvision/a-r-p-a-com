@@ -781,6 +781,10 @@ body {
   font-size: 12px;
   line-height: 1.35em;
 }
+.font-tiny {
+  font-size: 9px;
+  line-height: 1.35em;
+}
 h1 {
   font-size: 3em;
 }
@@ -956,7 +960,7 @@ img {
 }
 #news {
   display: none;
-  padding: 90px 0;
+  padding: 75px 0;
   letter-spacing: 0.07em;
   width: 92%;
   max-width: 2980px;
@@ -1038,7 +1042,7 @@ img {
     margin-bottom: 27.5px;
   }
   #news {
-    padding: 82.5px 0;
+    padding: 68.75px 0;
   }
   body {
     font-size: 17px;
@@ -1050,6 +1054,10 @@ img {
   }
   .font-small {
     font-size: 15px;
+    line-height: 1.35em;
+  }
+  .font-tiny {
+    font-size: 12px;
     line-height: 1.35em;
   }
   h2 {
@@ -1111,7 +1119,7 @@ img {
     margin-bottom: 30px;
   }
   #news {
-    padding: 90px 0;
+    padding: 75px 0;
   }
   body {
     font-size: 20px;
@@ -1123,6 +1131,10 @@ img {
   }
   .font-small {
     font-size: 18px;
+    line-height: 1.35em;
+  }
+  .font-tiny {
+    font-size: 14px;
     line-height: 1.35em;
   }
   h2 {
@@ -1203,7 +1215,7 @@ img {
     margin-bottom: 25px;
   }
   #news {
-    padding: 75px 0;
+    padding: 62.5px 0;
   }
 }
 @media screen and (max-width: 1150px) {
@@ -1263,7 +1275,7 @@ img {
     margin-bottom: 17px;
   }
   #news {
-    padding: 51px 0;
+    padding: 42.5px 0;
   }
   .tweet {
     width: 33.333333333333336%;
@@ -1326,7 +1338,7 @@ img {
     margin-bottom: 15px;
   }
   #news {
-    padding: 60px 0;
+    padding: 37.5px 0;
   }
   .tweet {
     width: 50%;
@@ -1341,6 +1353,10 @@ img {
   }
   .font-small {
     font-size: 10px;
+    line-height: 1.35em;
+  }
+  .font-tiny {
+    font-size: 8px;
     line-height: 1.35em;
   }
   h2 {
