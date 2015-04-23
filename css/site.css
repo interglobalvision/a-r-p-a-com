@@ -931,7 +931,6 @@ img {
 #nav-bottom-left {
   bottom: 2%;
   left: 2%;
-  padding-bottom: 1em;
 }
 #home {
   display: none;
@@ -1332,7 +1331,7 @@ img {
     width: 50%;
   }
   body {
-    font-size: 11px;
+    font-size: 13px;
     line-height: 1.35em;
   }
   .font-large {
@@ -1340,7 +1339,7 @@ img {
     line-height: 1.35em;
   }
   .font-small {
-    font-size: 10px;
+    font-size: 11px;
     line-height: 1.35em;
   }
   h2 {
@@ -1413,12 +1412,22 @@ img {
   .tweet {
     width: 100%;
   }
+  .font-large {
+    font-size: 15px;
+    line-height: 1.35em;
+  }
+  h2 {
+    font-size: 13px;
+    line-height: 1.35em;
+  }
+}
+@media screen and (max-width: 360px) {
   body {
     font-size: 10px;
     line-height: 1.35em;
   }
   .font-large {
-    font-size: 15px;
+    font-size: 13px;
     line-height: 1.35em;
   }
   .font-small {
@@ -1426,20 +1435,10 @@ img {
     line-height: 1.35em;
   }
   h2 {
-    font-size: 12px;
+    font-size: 11px;
     line-height: 1.35em;
   }
   .nav {
     letter-spacing: 0.03em;
-  }
-}
-@media screen and (max-width: 360px) {
-  .font-large {
-    font-size: 13px;
-    line-height: 1.35em;
-  }
-  h2 {
-    font-size: 11px;
-    line-height: 1.35em;
   }
 }
