@@ -241,7 +241,6 @@ img
 #nav-bottom-left
   bottom: 2%
   left: 2%
-  padding-bottom: 1em
 
 
 // HOME
@@ -582,8 +581,8 @@ img
 
   $font-size-large = 20px
   $font-size-sub-heading = 15px
-  $font-size-basic = 11px
-  $font-size-small = 10px
+  $font-size-basic = 13px
+  $font-size-small = 11px
   $font-size-tiny = 8px
 
   body
@@ -655,7 +654,21 @@ img
   // TYPE
 
   $font-size-large = 15px
-  $font-size-sub-heading = 12px
+  $font-size-sub-heading = 13px
+
+  .font-large
+    font-size: $font-size-large
+    line-height: $font-leading-basic
+
+  h2
+    font-size: $font-size-sub-heading
+    line-height: $font-leading-basic
+
+
+@media screen and (max-width: 360px)
+
+  $font-size-large = 13px
+  $font-size-sub-heading = 11px
   $font-size-basic = 10px
   $font-size-small = 9px
 
@@ -677,16 +690,3 @@ img
 
   .nav
     letter-spacing: $font-tracking-medium
-
-@media screen and (max-width: 360px)
-
-  $font-size-large = 13px
-  $font-size-sub-heading = 11px
-
-  .font-large
-    font-size: $font-size-large
-    line-height: $font-leading-basic
-
-  h2
-    font-size: $font-size-sub-heading
-    line-height: $font-leading-basic
