@@ -61,6 +61,9 @@ $color-white-soft = rgb(253,253,253)
 
 $color-blue = #0000FF
 
+$color-green = #00d693
+$color-red = #ff6861
+
 $animation-speed = 1s
 
 
@@ -123,6 +126,16 @@ a,a:active,a:visited
   text-decoration: none
   vertical-align: top
   border-bottom: 1px solid $color-white-soft
+
+#news, #home-text
+  a, a:active, a:visited
+    color:$color-green
+    border-bottom: none
+    &:hover
+      color: $color-red
+  .tweet-meta
+    a, a:active, a:visited
+      color: white
 
 
 // BASIC

@@ -822,6 +822,31 @@ a:visited {
   vertical-align: top;
   border-bottom: 1px solid #fdfdfd;
 }
+#news a,
+#home-text a,
+#news a:active,
+#home-text a:active,
+#news a:visited,
+#home-text a:visited {
+  color: #00d693;
+  border-bottom: none;
+}
+#news a:hover,
+#home-text a:hover,
+#news a:active:hover,
+#home-text a:active:hover,
+#news a:visited:hover,
+#home-text a:visited:hover {
+  color: #ff6861;
+}
+#news .tweet-meta a,
+#home-text .tweet-meta a,
+#news .tweet-meta a:active,
+#home-text .tweet-meta a:active,
+#news .tweet-meta a:visited,
+#home-text .tweet-meta a:visited {
+  color: #fff;
+}
 html {
   background-color: #00f;
   color: #fdfdfd;
