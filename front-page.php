@@ -69,7 +69,7 @@ if ( $clients ) {
 <?php
 foreach ($clients as $post) {
   $name = get_the_title();
-  echo '<li><a href="#!/'.$post->post_name.'">'.$name.'</a></li>';
+  echo '<li>'.$name.'</li>';
 }
 ?>
           </ul>
