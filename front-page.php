@@ -115,7 +115,7 @@ if ($content) {
 
       echo '<div class="tweet-meta font-tiny"><a target="_blank" href="https://twitter.com/__ARPA__/status/' . $tweet->id_str . '">';
       $time = strtotime($tweet->created_at);
-      echo '<span class="date">' . date('j l Y' , $time) . '</span>';
+      echo '<span class="date">' . date('j F Y' , $time) . '</span>';
       echo '<span class="time"> - ' . date('g:i' , $time) . '</span>';
       echo '</a></div>';
 
