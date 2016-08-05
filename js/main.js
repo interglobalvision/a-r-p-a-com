@@ -1,5 +1,5 @@
 /* jshint browser: true, devel: true, indent: 2, curly: true, eqeqeq: true, futurehostile: true, latedef: true, undef: true, unused: true */
-/* global $, jQuery, document, Modernizr, WP */
+/* global $, jQuery, document, WP */
 
 // VARIABLES
 
@@ -78,6 +78,15 @@ function router( hash ) {
 
 // VIDEO
 
+function centerVideo() {
+  var videoWidth = $noonVideo.width();
+  var halfWindowWidth = ($(window).width() / 2);
+  var marginLeft = ((videoWidth - halfWindowWidth) / 2);
+  $noonVideo.css({
+    'margin-left': '-' + marginLeft + 'px'
+  });
+}
+
 function initVideo() {
   var videoElement = document.getElementById('noon-video');
 
@@ -86,6 +95,7 @@ function initVideo() {
       'opacity': 1,
       'display': 'block'
     });
+    centerVideo();
   });
 
   videoElement.load();
@@ -105,15 +115,6 @@ function setWindowSized() {
         'height': $(window).height()
       });
     }
-  });
-}
-
-function centerVideo() {
-  var videoWidth = $noonVideo.width();
-  var halfWindowWidth = ($(window).width() / 2);
-  var marginLeft = ((videoWidth - halfWindowWidth) / 2);
-  $noonVideo.css({
-    'margin-left': '-' + marginLeft + 'px'
   });
 }
 
